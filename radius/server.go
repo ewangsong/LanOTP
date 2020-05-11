@@ -2,23 +2,13 @@ package radius
 
 import (
 	"fmt"
-	"log"
 	"net"
-	"os"
 
 	"github.com/astaxie/beego"
 )
 
 //RadiusRun 启动服务
 func RadiusRun() {
-	logfile, err := os.OpenFile("./goradius.log", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
-	if err != nil {
-		os.Exit(-1)
-	}
-	defer logfile.Close()
-	log.SetOutput(logfile)
-	log.SetPrefix("[INFO]")
-	log.SetFlags(log.Llongfile | log.Ldate | log.Ltime)
 	port := beego.AppConfig.String("radiusport")
 	udpaddr, err := net.ResolveUDPAddr("udp", port)
 	if err != nil {
