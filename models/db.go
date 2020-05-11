@@ -8,19 +8,32 @@ import (
 	"github.com/astaxie/beego/orm"
 )
 
-type WsUsers struct {
-	Id         int `orm:"pk;auto"`
-	TypeId     int `orm:"null"`
-	Name       string
-	Password   string
-	RealName   string
-	CreateTime time.Time `orm:"auto_now;type(datetime)"`
-}
+//管理用户
 type WsAdmin struct {
 	Id       int `orm:"pk;auto"`
 	Name     string
 	Password string
 }
+
+//otp信息
+type WsOtp struct {
+	OtpId       int `orm:"pk"`
+	OtpType     int
+	Secret      string
+	BindingUser string
+	Counter     uint64
+	OperatTime  time.Time `orm:"auto_now;type(datetime)"`
+}
+
+//用户信息
+type WsUsers struct {
+	Id         int `orm:"pk;auto"`
+	Name       string
+	RealName   string
+	CreateTime time.Time `orm:"auto_now;type(datetime)"`
+}
+
+//bas信息
 type WsBas struct {
 	Id     int `orm:"pk;auto"`
 	Name   string
@@ -29,6 +42,7 @@ type WsBas struct {
 	Port   string
 }
 
+//日志信息
 type WsLog struct {
 	Id           int `orm:"pk;auto"`
 	OperatorNmae string
@@ -37,24 +51,12 @@ type WsLog struct {
 	OperatDesc   string
 }
 
-type WsOtp struct {
-	OtpId       int `orm:"pk"`
-	Secret      string
-	BindingUser string
-	OperatTime  time.Time `orm:"auto_now;type(datetime)"`
-}
-
 func init() {
-	// user := beego.AppConfig.String("mysqluser")
-	// password := beego.AppConfig.String("mysqlpass")
-	// ip := beego.AppConfig.String("mysqlurls")
-	// mydb := beego.AppConfig.String("mysqldb")
-	// dbconfig := user + ":" + password + "@tcp" + "(" + ip + ":" + "3306" + ")" + "/" + mydb + "?" + "charset=utf8&loc=Local"
 	dbtype := beego.AppConfig.String("dbtype")
 	dbinfo := beego.AppConfig.String("dbinfo")
 
 	orm.RegisterDataBase("default", dbtype, dbinfo)
-	orm.RegisterModel(new(WsUsers), new(WsAdmin), new(WsBas), new(WsLog), new(WsOtp))
-	orm.RunSyncdb("default", false, false)
+	orm.RegisterModel(new(WsOtp), new(WsUsers), new(WsAdmin), new(WsBas), new(WsLog))
+	orm.RunSyncdb("default", false, true)
 	AddAdmin() //添加默认管理员账号
 }

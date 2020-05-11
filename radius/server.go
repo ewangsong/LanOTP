@@ -26,7 +26,7 @@ func RadiusServer(conn *net.UDPConn) {
 		uerPassword := UserPassword_GetString(pakage)
 		defer conn.Close()
 		go func() {
-			if GetUserPasswd(userName) == uerPassword {
+			if GetUserToken(userName) == uerPassword {
 				res := pakage.Response(CodeAccessAccept)
 				var vl = []byte{'o', 'k'}
 				ReplyMessage_Add(res, vl)

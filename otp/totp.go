@@ -13,7 +13,7 @@ type TOTP struct {
 	BasicOtp
 }
 
-func (t *TOTP) setDefaults() {
+func (t *TOTP) SetDefaults() {
 	if t.Time.IsZero() {
 		t.Time = time.Now()
 	}
@@ -33,8 +33,8 @@ func (t *TOTP) setDefaults() {
 }
 
 //Get totp token
-func (t *TOTP) Get() string {
-	t.setDefaults()
+func (t *TOTP) TotpGet() string {
+	t.SetDefaults()
 	t.BasicOtp.Counter = uint64(t.Time.Unix() / int64(t.Period))
 	return t.GetOtpToken()
 }
@@ -47,11 +47,11 @@ func (t *TOTP) Now() *TOTP {
 
 // Verify a token with the current settings, including the WindowBack and WindowForward
 func (t TOTP) Verify(token string) bool {
-	t.setDefaults()
+	t.SetDefaults()
 	givenTime := t.Time
 	for i := int(t.WindowBack) * -1; i <= int(t.WindowForward); i++ {
 		t.Time = givenTime.Add(time.Second * time.Duration(int(t.Period)*i))
-		if t.Get() == token {
+		if t.TotpGet() == token {
 			return true
 		}
 	}

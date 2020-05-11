@@ -23,13 +23,16 @@ var FilterUser = func(ctx *context.Context) {
 }
 
 func init() {
-	beego.AppPath = "/opt/lanradius"
-	beego.SetStaticPath("/static", "/opt/lanradius/static")
+	//beego.AppPath = "/opt/lanradius"
+	//beego.SetStaticPath("/static", "/opt/lanradius/static")
 
 	//	beego.LoadAppConfig("ini", "conf/app.conf")
 
+	// jsonConfig := `{
+	//     "filename" : "/var/log/lanradius/lanradius.log"
+	// }` //定义日志文件路径和名字
 	jsonConfig := `{
-	    "filename" : "/var/log/lanradius/lanradius.log"
+	    "filename" : "./lanradius.log"
 	}` //定义日志文件路径和名字
 
 	logs.SetLogger(logs.AdapterFile, jsonConfig) // 设置日志记录方式：本地文件记录

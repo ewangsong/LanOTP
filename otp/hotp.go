@@ -6,6 +6,6 @@ type HOTP struct {
 }
 
 //Get 获取htop token
-func (h *HOTP) Get() string {
+func (h *HOTP) HotpGet() string {
 	return h.GetOtpToken()
 }

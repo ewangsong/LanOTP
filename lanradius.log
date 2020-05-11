@@ -1,0 +1,47 @@
+2020/05/11 14:27:02.726 [I] [asm_amd64.s:1337]  http server Running on http://:8090
+2020/05/11 14:27:33.224 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|    257.421µs| nomatch|[97;44m GET     [0m /  
+2020/05/11 14:27:33.268 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.957401ms|   match|[97;44m GET     [0m /login   r:/login
+2020/05/11 14:27:33.399 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    370.588µs|   match|[97;44m GET     [0m /static/css/bootstrap.min.css
+2020/05/11 14:27:33.402 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     228.86µs|   match|[97;44m GET     [0m /static/css/font-awesome.min.css
+2020/05/11 14:27:33.402 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    351.575µs|   match|[97;44m GET     [0m /static/css/AdminLTE.min.css
+2020/05/11 14:27:33.402 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    165.477µs|   match|[97;44m GET     [0m /static/css/login3.css
+2020/05/11 14:27:33.402 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    463.702µs|   match|[97;44m GET     [0m /static/plugins/iCheck/square/blue.css
+2020/05/11 14:27:33.679 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    879.545µs|   match|[97;44m GET     [0m /static/plugins/jQuery/jQuery-2.2.0.min.js
+2020/05/11 14:27:33.680 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    164.737µs|   match|[97;44m GET     [0m /static/js/bootstrap.min.js
+2020/05/11 14:27:33.683 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    166.527µs|   match|[97;44m GET     [0m /static/plugins/iCheck/icheck.min.js
+2020/05/11 14:27:33.685 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    258.153µs|   match|[97;44m GET     [0m /static/img/lantouzi-login.png
+2020/05/11 14:27:33.783 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    367.363µs|   match|[97;44m GET     [0m /static/img/textured_paper.png
+2020/05/11 14:27:33.886 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    368.339µs|   match|[97;44m GET     [0m /static/fonts/glyphicons-halflings-regular.woff
+2020/05/11 14:27:34.038 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    206.427µs|   match|[97;44m GET     [0m /favicon.ico
+2020/05/11 14:27:54.272 [I] [asm_amd64.s:1337]  http server Running on http://:9090
+2020/05/11 14:28:00.058 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.250978ms|   match|[97;44m GET     [0m /login   r:/login
+2020/05/11 14:28:00.181 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    544.815µs|   match|[97;44m GET     [0m /static/css/bootstrap.min.css
+2020/05/11 14:28:00.201 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  14.039075ms|   match|[97;44m GET     [0m /static/plugins/iCheck/square/blue.css
+2020/05/11 14:28:00.207 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.956459ms|   match|[97;44m GET     [0m /static/css/login3.css
+2020/05/11 14:28:00.208 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  10.349759ms|   match|[97;44m GET     [0m /static/css/AdminLTE.min.css
+2020/05/11 14:28:00.209 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  21.818602ms|   match|[97;44m GET     [0m /static/css/font-awesome.min.css
+2020/05/11 14:28:00.343 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    205.759µs|   match|[97;44m GET     [0m /static/img/lantouzi-login.png
+2020/05/11 14:28:00.407 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    342.864µs|   match|[97;44m GET     [0m /static/plugins/jQuery/jQuery-2.2.0.min.js
+2020/05/11 14:28:00.407 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    169.033µs|   match|[97;44m GET     [0m /static/js/bootstrap.min.js
+2020/05/11 14:28:00.408 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    745.313µs|   match|[97;44m GET     [0m /static/plugins/iCheck/icheck.min.js
+2020/05/11 14:28:00.427 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    431.011µs|   match|[97;44m GET     [0m /static/img/textured_paper.png
+2020/05/11 14:28:00.446 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    229.303µs|   match|[97;44m GET     [0m /static/fonts/glyphicons-halflings-regular.woff
+2020/05/11 14:28:00.664 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     177.89µs|   match|[97;44m GET     [0m /favicon.ico
+2020/05/11 14:28:06.611 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    675.775µs|   match|[97;46m POST    [0m /login   r:/login
+2020/05/11 14:28:06.669 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  33.028081ms|   match|[97;44m GET     [0m /admin/dashboard   r:/admin/dashboard
+2020/05/11 14:28:06.745 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    435.174µs|   match|[97;44m GET     [0m /static/css/ionicons.min.css
+2020/05/11 14:28:06.749 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.423523ms|   match|[97;44m GET     [0m /static/css/manage.css
+2020/05/11 14:28:06.750 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.373495ms|   match|[97;44m GET     [0m /static/css/skins/_all-skins.min.css
+2020/05/11 14:28:06.898 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    145.755µs|   match|[97;44m GET     [0m /static/img/toughradius-logo.png
+2020/05/11 14:28:06.957 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    239.713µs|   match|[97;44m GET     [0m /static/js/json2.js
+2020/05/11 14:28:06.958 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    131.992µs|   match|[97;44m GET     [0m /static/plugins/slimScroll/jquery.slimscroll.min.js
+2020/05/11 14:28:06.958 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    200.069µs|   match|[97;44m GET     [0m /static/plugins/fastclick/fastclick.min.js
+2020/05/11 14:28:06.960 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    166.774µs|   match|[97;44m GET     [0m /static/js/app.min.js
+2020/05/11 14:28:06.973 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    237.438µs|   match|[97;44m GET     [0m /static/fonts/fontawesome-webfont.woff2
+2020/05/11 14:28:07.219 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    113.124µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/11 14:29:13.010 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.074152ms|   match|[97;44m GET     [0m /admin/users/add   r:/admin/users/add
+2020/05/11 14:29:27.443 [I] [read.go:16]  0 [] 
+2020/05/11 14:29:27.448 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   7.202842ms|   match|[97;44m GET     [0m /admin/bas   r:/admin/bas
+2020/05/11 14:29:29.193 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.420525ms|   match|[97;44m GET     [0m /admin/users   r:/admin/users
+2020/05/11 14:54:29.564 [I] [asm_amd64.s:1337]  http server Running on http://:9090
+2020/05/11 15:37:35.192 [I] [asm_amd64.s:1337]  http server Running on http://:9090
