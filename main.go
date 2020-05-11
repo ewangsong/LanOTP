@@ -1,7 +1,7 @@
 package main
 
 import (
-	"radiusweb/cmd"
+	"ewangsong/LanOTP/cmd"
 	_ "radiusweb/models"
 	_ "radiusweb/routers"
 	"strings"
@@ -46,5 +46,8 @@ func init() {
 }
 
 func main() {
-	cmd.Execute() //初始化command命令
+	//cmd.Execute() //初始化command命令
+	//beego.Run()
+
+	cmd.Cmd()
 }

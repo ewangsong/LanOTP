@@ -31,6 +31,7 @@ func DbLive() {
 func GetSecretAndDiff(ipp string) (secret []byte) {
 	db, _ := sql.Open(dbtype, dbinfo)
 	defer db.Close()
+	fmt.Println(ipp)
 	res := db.QueryRow("select ip_addr,secret from ws_bas where ip_addr = ?", ipp)
 	err2 := res.Scan(&ipp, &secret)
 	if err2 != nil {
@@ -69,7 +70,7 @@ func GetUserToken(user string) (p string) {
 	}
 	defer db.Close()
 	var totp otp.TOTP
-	err = db.QueryRow("select secret from ws_otp where name=?", user).Scan(&totp.Secret)
+	err = db.QueryRow("select secret from ws_otp where binding_user=?", user).Scan(&totp.Secret)
 	if err != nil {
 		beego.Error("查询用户错误", user)
 		return

@@ -1,6 +1,7 @@
 package models
 
 import (
+	"fmt"
 	"time"
 
 	_ "github.com/Go-SQL-Driver/MySQL"
@@ -54,7 +55,7 @@ type WsLog struct {
 func init() {
 	dbtype := beego.AppConfig.String("dbtype")
 	dbinfo := beego.AppConfig.String("dbinfo")
-
+	fmt.Println(1)
 	orm.RegisterDataBase("default", dbtype, dbinfo)
 	orm.RegisterModel(new(WsOtp), new(WsUsers), new(WsAdmin), new(WsBas), new(WsLog))
 	orm.RunSyncdb("default", false, true)
