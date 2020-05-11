@@ -1,0 +1,94 @@
+
+<script>
+
+function do_pause(account_number)
+{
+    if (!confirm("确认操作吗？")) {
+        return;
+    }
+    params = {account_number:account_number,'_xsrf': '${handler.xsrf_token}'};
+    $.post("/admin/account/pause", params, function (data) {
+        alert(data.msg)
+        window.location.reload();
+    },"json");
+}
+
+function do_resume(account_number)
+{
+    if (!confirm("确认操作吗？")) {
+        return;
+    }
+    params = {account_number:account_number,'_xsrf': '${handler.xsrf_token}'};
+    $.post("/admin/account/resume", params, function (data) {
+        alert(data.msg)
+        window.location.reload();
+    },"json");
+}    
+
+function release(account_number)
+{
+    params = {account_number:account_number,'_xsrf': '${handler.xsrf_token}'};
+    $.post("/admin/account/release", params, function (data) {
+        alert(data.msg)
+        location.href.reload();
+    },"json");
+}
+
+function do_delete(user_id)
+{
+    if(confirm("删除账号确认操作吗？")) {
+        window.location.href = "/admin/users/delete?user_id="+user_id;
+    }
+    
+}
+
+</script>
+{{range .user}}
+<section class="content">
+    <div class="box box-default">
+        <div class="box-header">
+            <i class="fa fa-user"></i>
+            <h3 class="box-title">用户受理</h3>
+            <div class="bar pull-right"><a href="javascript:history.go(-1);">返回</a></div>
+        </div>
+        <div class="box-body">
+            <div class="container">
+        <div class="pull-left">
+           <div class="btn-group" role="group" aria-label="...">
+                
+                <a href="/admin/users/update?user_id={{.Id}}" class="btn btn-sm bg-navy">修改基本资料</a>
+            <a class="btn btn-sm btn-danger" href="javascript:do_delete('{{.Id}}')">删除</a>
+            </div>
+        </div>   
+        <br> 
+
+        <table class="table">
+                <thead>
+                    <tr>
+                        <th colspan="6"> 基本信息</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>姓名</td>
+                        <td>{{.RealName}}</td> 
+                        <td>创建和修改时间</td>
+                        <td>{{.CreateTime.Format "2006-01-02 15:04:05"}}</td>          
+                    </tr>
+                    <tr>
+                            <td>账号</td>
+                            <td>{{.Name}}</td> 
+                            <td>密码</td>  
+                            <td>{{.Password}}</td>   
+                            
+                    </tr>                                                                             
+            </tbody>
+        </table>
+
+    </div>
+</div>
+</div>
+</div>
+
+</section>
+{{end}}

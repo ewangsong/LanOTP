@@ -1,0 +1,52 @@
+
+<section class="content">
+    <div class="box box-default">
+        <div class="box-header">
+            <i class="fa fa-dashboard"></i>
+            <h3 class="box-title">控制面板</h3>
+        </div>
+        <div class="box-body">
+            <div class="container">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th colspan="4"> <i class="fa fa-user"></i> 当前登录管理员</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>登录管理员</td>
+                    <td>admin</td>
+                    <td>登录时间</td>
+                    <td>{{.ServerTime}}</td>
+                </tr>
+                <tr>
+                    <td colspan="2">登录IP地址</td>
+                    <td>{{.Ip}}</td>
+                </tr>
+                </tbody>
+                <thead>
+                <tr>
+                    <th colspan="4"> <i class="fa fa-laptop"></i> 系统状态信息</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width=15% >cpu使用率</td>
+                    <td width=35% class="break-all">{{.CPU}}</td>
+                    <td width=15% >内存使用率</td>
+                    <td width=35% >{{.MemInfo}}</td>                    
+                </tr>
+                <tr>
+                    <td>磁盘使用率</td>
+                    <td colspan="3">{{.Disk}}</td>
+                </tr>
+                </tbody>
+                <thead>
+            </table>
+        </div>
+    </div>
+ </div>
+</section>
+
+

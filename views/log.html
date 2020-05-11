@@ -1,0 +1,63 @@
+
+<script src="/static/js/bootstrap-datepicker.js"></script>
+<link rel="stylesheet" href="/static/js/datepicker.css">
+   <script>
+    $(document).ready(function(){
+        $("#query_begin_time").datepicker();
+        $("#query_end_time").datepicker();
+    });
+   </script>
+
+
+
+<section class="content">
+    <div class="box box-default">
+        <div class="box-header">
+        <i class="fa fa-hdd-o"></i> <h3 class="box-title">操作日志查询</h3></div>
+        <div class="box-body">
+            <div class="container">
+        <form id="query_form" class="form-horizontal form-well" role="form" action="/admin/log" method="post">
+            <div class="form-group">
+                <label for="keyword" class="col-md-2 control-label">关键字</label>
+                <div class="col-md-3">
+                    <input type="text" id="keyword" name="keyword" class="form-control" value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-5 col-md-7">
+                    <input type="submit" class="btn btn-md bg-navy" value="查询"></input>
+                </div>
+            </div>
+        </form>
+
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th width="10%">操作员</th>
+                <th width="10%">操作员ip</th>
+                <th width="20%">操作时间</th>
+                <th width="60%">操作描述</th>
+            </tr>
+            </thead>
+            <tbody>
+       {{range .ShowLog}}
+            <tr>
+                <td>admin</td>
+                <td>{{.OperatIp}}</td>
+                <td>{{.OperatTime.Format "2006-01-02 15:04:05"}}</td>
+                <td>{{.OperatDesc}}</td>
+            </tr>
+         {{end}}
+            </tbody>
+        </table>
+   
+    <ul class="pagination pull-right">
+        <li class="disabled"><a href="#">查询记录数 {{.totalItem}}</a></li>
+        {{.pagerhtml}}
+    </ul>
+    </div>
+    
+</div>
+        </div>
+</section>
+ 

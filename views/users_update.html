@@ -1,0 +1,54 @@
+{{range .user1}}
+<section class="content">
+        <div class="box box-default">
+            <div class="box-header">
+                <i class="fa fa-edit"></i>
+                <h3 class="box-title">基本信息修改</h3>
+                <div class="bar pull-right"><a href="javascript:history.go(-1);">返回</a></div>
+            </div>
+            <div class="box-body">
+                <div class="container">
+            <form class="form-horizontal form-well" role="form" action="/admin/users/update?user_id={{.Id}}" method="post">
+                    <input type="hidden" name="_xsrf" value="d83e80143d5f44e08755b2dd93adf48c"/>
+                        <div class="form-group">
+            <div class="col-sm-6">
+            <input type="hidden" placeholder="用户账号" id="account_number" value="00-0c-29-10-f2-0a" name="account_number"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-6">
+            <input name="customer_id" placeholder="mid" required="required" value="1" id="customer_id" type="hidden" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-4 control-label" id="lab_realname" for="realname">姓名</label>
+            <div class="col-sm-6">
+            <input name="realname" required="required" value="{{.RealName}}" id="realname" type="text" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-4 control-label" id="lab_customer_name" for="customer_name">账号</label>
+            <div class="col-sm-6">
+            <input name="name" value="{{.Name}}" id="name" autocomplete="off" type="text" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-4 control-label" id="lab_new_password" for="new_password">密码</label>
+            <div class="col-sm-6">
+            <input type="text" class="form-control" name="new_password" id="new_password" value="{{.Password}}"/>
+            </div>
+        </div>
+    <hr/>
+        <div class="form-group">
+            <label class="col-sm-4 control-label" id="lab_submit" for="submit"></label>
+            <div class="col-sm-6">
+            <input name="submit" placeholder="submit" id="submit" type="submit" class="btn btn-md bg-navy" value="提交"><b></b></input>
+            </div>
+        </div>
+    
+            </form>
+                    </div>
+        </div>
+    </div>
+    </section>
+    {{end}}

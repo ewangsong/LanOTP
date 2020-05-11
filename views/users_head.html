@@ -1,0 +1,17 @@
+<script>
+          function check_samename() {
+              var realname = $("#realname").val();
+              var username = $("#username").val();
+              var password = $("#password").val();
+              
+              params = {username: username, password: password, realname: realname, _xsrf: ''};
+              $.post("/admin/users/add", params, function (data) {
+                  if (data.code > 0) {
+                      alert(data.msg)
+                      return false;
+                  }else {
+                    window.location.href = data.url;
+                }
+              }, "json");
+          }
+  </script>

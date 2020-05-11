@@ -1,0 +1,48 @@
+<section class="content">
+    <div class="box box-default">
+        <div class="box-header">
+            <i class="fa fa-edit"></i>
+            <h3 class="box-title">增加接入设备</h3>
+            <div class="bar pull-right"><a href="javascript:history.go(-1);">返回</a></div>
+        </div>
+        <div class="box-body">
+            <div class="container">
+        <form class="form-horizontal form-well" role="form" action="/admin/bas/add" method="post">
+                <input type="hidden" name="_xsrf" value="d83e80143d5f44e08755b2dd93adf48c"/>
+                    <div class="form-group">
+        <label class="col-sm-4 control-label" id="lab_ip_addr" for="ip_addr">接入设备地址</label>
+        <div class="col-sm-6">
+        <input type="text" placeholder="接入设备地址, ip格式：xxx.xxx.xxx.xxx" class="form-control" name="ip_addr" id="ip_addr"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-4 control-label" id="lab_bas_name" for="bas_name">接入设备名称</label>
+        <div class="col-sm-6">
+        <input name="bas_name" placeholder="接入设备名称, 长度必须为2到64" required="required" id="bas_name" type="text" class="form-control"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-4 control-label" id="lab_bas_secret" for="bas_secret">共享秘钥</label>
+        <div class="col-sm-6">
+        <input name="bas_secret" placeholder="共享秘钥, 必须是长度为4到32的数字字母组合" required="required" id="bas_secret" type="text" class="form-control"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-4 control-label" name="lab_coa_port" for="coa_port">授权端口</label>
+        <div class="col-sm-6">
+        <input name="coa_port" default="3799" placeholder="授权端口, 必须是数字" required="required" id="coa_port" type="text" class="form-control"/>
+        </div>
+    </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-4 control-label" id="lab_submit" for="submit"></label>
+        <div class="col-sm-6">
+        <input name="提交" type="submit" id="submit" placeholder="submit" class="btn btn-md bg-navy"><b></b></input>
+        </div>
+    </div>
+
+        </form>
+                </div>
+    </div>
+</div>
+</section>

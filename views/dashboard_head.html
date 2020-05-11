@@ -1,0 +1,212 @@
+<script src="/static/js/highcharts.js"></script>
+<script src="/static/js/charttheme.js"></script>
+<script src="/static/js/exporting.js"></script>
+<script>
+
+function clean_cache() {
+    $.get("/admin/cache/clean", {}, function (data) {
+        alert(data.msg)
+        window.location.reload();
+    }, "json");
+}
+
+function clean_trace() {
+    $.get("/admin/trace/clean", {}, function (data) {
+        alert(data.msg)
+        window.location.reload();
+    }, "json");
+}
+
+function busy(flag) {
+    if (flag) {
+        $("#loading").show();
+        $("#inbox").html("")
+        $("#inbox").hide();
+    } else {
+        $("#loading").hide();
+        $("#inbox").show();
+    }
+}
+
+var msgstat_options = {
+    credits : {enabled:false},
+    chart: {type: 'areaspline',renderTo: 'msgstat-chart',height:300},
+    title: {text: '最近15分钟的消息统计'},
+    xAxis: {type: 'datetime',tickInterval : 60*1000},
+    yAxis: {title: {text: '消息量'},
+        labels: {formatter: function() {return this.value;}}              
+    },
+    tooltip: {shared: true},
+    legend: {
+                layout: 'vertical',
+                align: 'left',
+                verticalAlign: 'top',
+                x: 150,
+                y: 100,
+                floating: true,
+                borderWidth: 1,
+                backgroundColor: '#FFFFFF'
+            },  
+    plotOptions: {areaspline: {
+        marker: {enabled: false,symbol: 'circle',radius: 2,states: {hover: {enabled: true}}},
+        fillOpacity: 0.2
+    }},           
+    series: [{},{},{},{}]
+};
+
+var msgstat_chart;
+var mstimer;
+
+function updateMsgChart(data){
+    console.log(data)
+    for (p in data){
+        $("#"+p).html(data[p])
+    }
+    var auth_req_stat = {name:'认证请求消息',data:data.auth_req_stat};
+    var auth_resp_stat = {name:'认证响应消息',data:data.auth_resp_stat};
+    var acct_req_stat = {name:'计费请求消息',data:data.acct_req_stat};
+    var acct_resp_stat = {name:'计费响应消息',data:data.acct_resp_stat};
+    msgstat_chart.series[0].update(auth_req_stat) ;
+    msgstat_chart.series[1].update(auth_resp_stat) ;
+    msgstat_chart.series[2].update(acct_req_stat) ;
+    msgstat_chart.series[3].update(acct_resp_stat) ;
+}
+
+function updateMsgStat()
+{
+    if(!msgstat_chart)
+    {
+        msgstat_chart = new Highcharts.Chart(msgstat_options);
+    }
+    if(mstimer)
+    {
+        clearTimeout(mstimer);
+    }
+    $.get("/admin/dashboard/msgstat", function (data) {
+        updateMsgChart(data);
+    },"json");
+    mstimer = setTimeout("updateMsgStat()", 10000);
+}
+
+
+function update() {
+    busy(true);
+    $.post("/admin/dashboard/update", {_xsrf: '${handler.xsrf_token}'}, function (data) {
+        $("#status_line").html(data.value)
+        busy(false);
+    },"json");
+}
+
+
+var online_options = {
+    credits : {enabled:false},
+    chart: {type: 'areaspline',renderTo: 'online-chart',height:300},
+    title: {text: '在线用户统计'},
+    subtitle: {text: '${"%s 00:00:00 -- %s 23:59:59"%(utils.get_currdate(),utils.get_currdate())}'},
+    xAxis: {type: 'datetime',tickInterval : 7200*1000},
+    yAxis: {
+        title: {text: '在线数'},
+        labels: {formatter: function() {return this.value + '人';}}            
+    },
+    tooltip: {shared: true},
+    legend: {enabled: false},    
+    plotOptions: {areaspline: {
+        stacking: 'normal',
+        marker: {enabled: false,symbol: 'circle',radius: 2,states: {hover: {enabled: true}}},
+        fillOpacity: 0.4
+    }},           
+    series: [{}]
+};
+
+function update_online()
+{
+    $.get("/admin/dashboard/onlinestat", {day_code:'${utils.get_currdate()}'} , function (ev) {
+        if (ev.code == 0) {
+            online_options.series = ev.data;
+            new Highcharts.Chart(online_options);
+        }
+    }, "json");
+}
+
+
+var flow_options = {
+    credits : {enabled:false},
+    chart: {type: 'areaspline',renderTo: 'flow-chart',height:300},
+    title: {text: '在线流量统计'},
+    subtitle: {text: '10分钟内流量统计数据'},
+    xAxis: {type: 'datetime',tickInterval : 60*1000},
+    yAxis: {title: {text: '使用流量'},
+        labels: {format:'{value:.2f}',formatter: function() {return this.value + 'MB';}}            
+    },
+    tooltip: {shared: true, valueSuffix: 'MB'},
+    legend: {
+                layout: 'vertical',
+                align: 'left',
+                verticalAlign: 'top',
+                x: 150,
+                y: 100,
+                floating: true,
+                borderWidth: 1,
+                backgroundColor: '#FFFFFF'
+            },  
+    plotOptions: {areaspline: {
+        marker: {enabled: false,symbol: 'circle',radius: 2,states: {hover: {enabled: true}}},
+        fillOpacity: 0.4
+    }},           
+    series: [{}]
+};
+
+function update_flow()
+{
+    $.get("/admin/dashboard/flowstat", {day_code:'${utils.get_currdate()}'} , function (ev) {
+        if (ev.code == 0) {
+            flow_options.series = ev.data;
+            new Highcharts.Chart(flow_options);
+        }
+    }, "json");
+}
+
+
+
+
+function restart() {
+    busy(true);
+    $.ajax({
+        url: '/admin/dashboard/restart',
+        data:{_xsrf: '${handler.xsrf_token}'},
+        dataType:"json",
+        type: 'POST',
+        timeout: 9000,
+        error: function (xhr, textStatus) {
+            busy(false);
+            update()
+        },
+    });
+    setTimeout("update()", 9000);
+}
+
+
+$(document).ready(function () {
+    Highcharts.setOptions({global: {useUTC: false}});
+    $("#loading").hide();
+    $("#inbox").hide();
+
+    $("#restart").click(function () {
+        restart();
+    });
+
+    $("#refresh").click(function () {
+        update()
+    });
+    updateMsgStat();
+    update_online();
+    update_flow();
+});
+
+</script>
+<style type="text/css">
+    .break-all {
+        word-break: break-all; /*必須*/
+    }
+</style>
+

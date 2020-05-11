@@ -1,0 +1,68 @@
+{{define "head"}}
+{{end}}
+{{define "body"}}
+{{end}}
+<!-- 顶部栏 -->
+{{define "template_ui.page_nav"}}
+<a href="/" class="logo"><img src="/static/img/toughradius-logo.png"></a>
+<!-- Header Navbar: style can be found in header.less -->
+<nav class="navbar navbar-static-top" role="navigation">
+    <!-- Sidebar toggle button-->
+    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </a>
+
+    <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/about">关于</a></li>  
+            <li><a href="/admin/dashboard">控制面板</a></li>
+            <li><a href="/admin/password">修改密码</a></li>
+            <li><a href="/admin/logout">退出</a></li>
+        </ul>
+    </div>
+</nav>
+{{end}}
+
+<!-- 侧边栏 -->
+{{define "template_ui.page_sidebar"}}
+<section class="sidebar">
+    <ul class="sidebar-menu">
+        <li class="header">功能导航</li>
+        <li class="treeview active">
+        <a href="#">
+        <i class="fa fa-cog"></i> <span>系统管理</span> <i 
+        class="fa fa-angle-left pull-right"></i>
+    </a>
+    <ul class="treeview-menu">
+            <li class=""><a href="/admin/users/add"><i class="fa fa-circle-o"></i>添加用户管理</a>
+            </li>       
+            <li class=""><a href="/admin/users"><i class="fa fa-circle-o"></i>用户信息管理</a>
+            </li>
+            <li class=""><a href="/admin/bas"><i class="fa fa-circle-o"></i>接入设备管理</a>
+            </li>
+          
+            <li class=""><a href="/admin/log"><i class="fa fa-circle-o"></i>系统日志查询</a>
+            </li>
+            <li class=""><a href="/admin/superrpc"><i class="fa fa-circle-o"></i>系统服务管理</a>
+            </li>
+        </ul>
+</ul>
+</section>
+               
+<!-- /.sidebar -->
+{{end}}
+
+
+
+<!-- 网页尾部 -->
+{{define "template_ui.page_footer"}}
+<!-- <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+        <b>Version</b> ${sys_version or 'unknow'}
+    </div>
+    <strong>Copyright © 2015 <a href="http://toughradius.net">toughradius.net</a>.</strong> All rights reserved.
+</footer>  -->
+{{end}}

@@ -1,0 +1,86 @@
+<script>
+function do_delete(user_id)
+{
+    if(confirm("删除账号确认操作吗？")) {
+        window.location.href = "/admin/users/delete?user_id="+user_id;
+    }
+    
+}
+</script>
+<section class="content">
+        <div class="box box-default">
+            <div class="box-header">
+                <i class="fa fa-users"></i>
+                <h3 class="box-title">用户列表</h3>
+            </div>
+            <div class="box-body">
+                <div class="container">
+            <form id="query_form" class="form-horizontal form-well" role="form" action="/admin/users/" method="post">
+                <div class="form-group">           
+                    <label for="realname" class="col-md-1 control-label">姓名</label>
+                    <div class="col-md-3">
+                        <input type="text" id="realname" name="realname" class="form-control" placeholder="模糊查询" value="">
+                    </div>
+                    <label for="user_name" class="col-md-1 control-label">账号</label>
+    
+                    <div class="col-md-3">
+                        <input type="text" id="user_name" name="name" class="form-control" placeholder="模糊查询" value=>
+                    </div>
+                    <label for="mobile" class="col-md-1 control-label">密码</label>
+                        <div class="col-md-3">
+                            <input type="text" id="mobile" name="mobile" class="form-control" value="">
+                        </div>           
+                    
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-5 col-md-7">
+                            <input type="submit" class="btn btn-md bg-navy" value="查询"></ipput>
+                    </div>
+                </div>
+            </form>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>类型</th>
+                    <th>账号</th>
+                    
+                    <th>姓名</th>
+                    <th>创建时间</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                    {{range .ShowUsers}}
+                <tr>
+                    {{if eq .TypeId 1}}
+                    <td>MAC地址认证</td>
+                    {{else if eq .TypeId 0}}
+                    <td>MAC地址认证</td>
+                    {{end}}
+                    <td>
+                        <a href="/admin/users/detail?user_id={{.Id}}">{{.Name}}</a>
+                    </td>
+    
+                    <td>{{.RealName }}</td>
+                    <td>{{.CreateTime.Format "2006-01-02 15:04:05"}}</td>
+                    <td>
+                        <a class="opt-btn btn-default" href="javascript:do_delete('{{.Id}}')">删除</a>
+                    </td>
+                </tr>
+               {{end}}
+                </tbody>
+            </table>
+            <ul class="pagination pull-right">
+                 <!-- <li class="disabled"><a href="#">查询记录数 {{.Count}}</a></li>
+                <li class="disabled"><a href="#">1/{{.PageCount}}页</a></li> -->
+                <li class="disabled"><a href="#">查询记录数 {{.totalItem}}</a></li>
+                {{.pagerhtml}}
+                
+
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+    </section>
+    
