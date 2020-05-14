@@ -1,0 +1,577 @@
+2020/05/13 11:38:25.695 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|     110.29µs| nomatch|[97;44m GET     [0m /admin/token/add
+2020/05/13 11:38:25.728 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.094763ms|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 11:38:25.800 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.808589ms|   match|[97;44m GET     [0m /static/css/bootstrap.min.css
+2020/05/13 11:38:25.801 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.630835ms|   match|[97;44m GET     [0m /static/css/AdminLTE.min.css
+2020/05/13 11:38:25.803 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|    550.266µs|   match|[97;44m GET     [0m /static/css/font-awesome.min.css
+2020/05/13 11:38:25.803 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|     558.02µs|   match|[97;44m GET     [0m /static/plugins/iCheck/square/blue.css
+2020/05/13 11:38:25.804 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|    549.706µs|   match|[97;44m GET     [0m /static/css/login3.css
+2020/05/13 11:38:25.999 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|     682.18µs|   match|[97;44m GET     [0m /static/img/lantouzi-login.png
+2020/05/13 11:38:26.038 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.974096ms|   match|[97;44m GET     [0m /static/img/textured_paper.png
+2020/05/13 11:38:26.067 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|    540.243µs|   match|[97;44m GET     [0m /static/fonts/glyphicons-halflings-regular.woff
+2020/05/13 11:38:26.183 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.781382ms|   match|[97;44m GET     [0m /static/plugins/jQuery/jQuery-2.2.0.min.js
+2020/05/13 11:38:26.183 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|    935.473µs|   match|[97;44m GET     [0m /static/js/bootstrap.min.js
+2020/05/13 11:38:26.183 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|   1.408135ms|   match|[97;44m GET     [0m /static/plugins/iCheck/icheck.min.js
+2020/05/13 11:38:27.703 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.901158ms|   match|[97;46m POST    [0m /login   r:/login
+2020/05/13 11:38:27.777 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  50.942352ms|   match|[97;44m GET     [0m /admin/dashboard   r:/admin/dashboard
+2020/05/13 11:38:27.851 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.463179ms|   match|[97;44m GET     [0m /static/css/ionicons.min.css
+2020/05/13 11:38:27.855 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|   2.500943ms|   match|[97;44m GET     [0m /static/css/skins/_all-skins.min.css
+2020/05/13 11:38:27.857 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|   1.795544ms|   match|[97;44m GET     [0m /static/css/manage.css
+2020/05/13 11:38:28.012 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|    313.861µs|   match|[97;44m GET     [0m /static/img/toughradius-logo.png
+2020/05/13 11:38:28.042 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|    515.558µs|   match|[97;44m GET     [0m /static/plugins/fastclick/fastclick.min.js
+2020/05/13 11:38:28.042 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|    803.863µs|   match|[97;44m GET     [0m /static/js/json2.js
+2020/05/13 11:38:28.042 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|     676.38µs|   match|[97;44m GET     [0m /static/js/app.min.js
+2020/05/13 11:38:28.043 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|   1.409318ms|   match|[97;44m GET     [0m /static/plugins/slimScroll/jquery.slimscroll.min.js
+2020/05/13 11:38:28.071 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    805.291µs|   match|[97;44m GET     [0m /static/fonts/fontawesome-webfont.woff2
+2020/05/13 11:38:28.243 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|     52.467µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 11:38:32.407 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    6.32965ms|   match|[97;44m GET     [0m /admin/token   r:/admin/token
+2020/05/13 11:38:33.424 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.456161ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 11:41:45.497 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    3.74372ms|   match|[97;44m GET     [0m /admin/token   r:/admin/token
+2020/05/13 11:41:52.521 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.839048ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 11:42:08.553 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.411032ms|   match|[97;44m GET     [0m /admin/token   r:/admin/token
+2020/05/13 11:44:04.210 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   8.429431ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 13:34:49.402 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 13:34:56.591 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|    683.638µs| nomatch|[97;44m GET     [0m /admin/users/add
+2020/05/13 13:34:56.640 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    766.862µs|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 13:34:58.166 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.462511ms|   match|[97;46m POST    [0m /login   r:/login
+2020/05/13 13:34:58.220 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  28.272372ms|   match|[97;44m GET     [0m /admin/dashboard   r:/admin/dashboard
+2020/05/13 13:35:00.510 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    5.46063ms|   match|[97;44m GET     [0m /admin/users   r:/admin/users
+2020/05/13 13:35:02.887 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.747408ms|   match|[97;44m GET     [0m /admin/users/add   r:/admin/users/add
+2020/05/13 13:35:04.342 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.282927ms|   match|[97;44m GET     [0m /admin/users   r:/admin/users
+2020/05/13 13:35:09.840 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.870048ms|   match|[97;44m GET     [0m /admin/users/add   r:/admin/users/add
+2020/05/13 13:35:15.179 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.868521ms|   match|[97;46m POST    [0m /admin/users/add   r:/admin/users/add
+2020/05/13 13:35:15.184 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.962958ms|   match|[97;44m GET     [0m /admin/users/add   r:/admin/users/add
+2020/05/13 13:35:39.825 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   7.483185ms|   match|[97;46m POST    [0m /admin/users/add   r:/admin/users/add
+2020/05/13 13:35:39.826 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   7.448259ms|   match|[97;44m GET     [0m /admin/users/add   r:/admin/users/add
+2020/05/13 13:35:39.880 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.906205ms|   match|[97;44m GET     [0m /admin/users/detail   r:/admin/users/detail
+2020/05/13 13:42:14.381 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.076356ms|   match|[97;44m GET     [0m /admin/users/add   r:/admin/users/add
+2020/05/13 13:43:20.575 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.061047ms|   match|[97;44m GET     [0m /admin/users/add   r:/admin/users/add
+2020/05/13 13:43:20.919 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    423.793µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 13:43:25.638 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.733253ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:12:01.555 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 14:12:06.421 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|    256.974µs| nomatch|[97;46m POST    [0m /admin/users/add
+2020/05/13 14:12:06.474 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    853.152µs|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 14:12:09.335 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|     87.934µs| nomatch|[97;44m GET     [0m /admin/token/add
+2020/05/13 14:12:09.366 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.458356ms|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 14:12:09.890 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|    171.342µs|   match|[97;44m GET     [0m /favicon.ico
+2020/05/13 14:12:10.845 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    844.713µs|   match|[97;46m POST    [0m /login   r:/login
+2020/05/13 14:12:10.895 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  27.587489ms|   match|[97;44m GET     [0m /admin/dashboard   r:/admin/dashboard
+2020/05/13 14:12:15.105 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.726025ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:12:26.835 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    341.212µs|   match|[97;46m POST    [0m /admin/users/add   r:/admin/users/add
+2020/05/13 14:12:26.856 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   9.605808ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:17:08.754 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 14:17:11.049 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|    299.411µs| nomatch|[97;44m GET     [0m /admin/token/add
+2020/05/13 14:17:11.061 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    846.092µs|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 14:17:12.561 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    761.784µs|   match|[97;46m POST    [0m /login   r:/login
+2020/05/13 14:17:12.650 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  17.714478ms|   match|[97;44m GET     [0m /admin/dashboard   r:/admin/dashboard
+2020/05/13 14:17:14.844 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.836013ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:17:21.675 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    101.753µs|   match|[97;46m POST    [0m /admin/users/add   r:/admin/users/add
+2020/05/13 14:17:21.694 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  15.356277ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:17:39.000 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.310361ms|   match|[97;44m GET     [0m /admin/token   r:/admin/token
+2020/05/13 14:17:41.253 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.280392ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:18:43.718 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 14:18:48.616 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|    239.669µs| nomatch|[97;44m GET     [0m /admin/token/add
+2020/05/13 14:18:48.651 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.189649ms|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 14:18:49.904 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.265549ms|   match|[97;46m POST    [0m /login   r:/login
+2020/05/13 14:18:49.994 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  19.014544ms|   match|[97;44m GET     [0m /admin/dashboard   r:/admin/dashboard
+2020/05/13 14:18:53.458 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.404238ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:18:54.772 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   7.271324ms|   match|[97;44m GET     [0m /admin/token   r:/admin/token
+2020/05/13 14:19:24.309 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.997274ms|   match|[97;44m GET     [0m /admin/token   r:/admin/token
+2020/05/13 14:19:25.355 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.158288ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:19:28.762 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    104.073µs|   match|[97;46m POST    [0m /admin/users/add   r:/admin/users/add
+2020/05/13 14:19:28.778 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.198342ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:20:23.002 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 14:20:41.604 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|   1.286921ms| nomatch|[97;46m POST    [0m /admin/users/add
+2020/05/13 14:20:41.607 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|     80.951µs| nomatch|[97;44m GET     [0m /admin/token/add
+2020/05/13 14:20:41.657 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.178943ms|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 14:20:41.660 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.728619ms|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 14:20:43.560 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    758.502µs|   match|[97;46m POST    [0m /login   r:/login
+2020/05/13 14:20:43.610 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  21.638276ms|   match|[97;44m GET     [0m /admin/dashboard   r:/admin/dashboard
+2020/05/13 14:20:45.243 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.729329ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:20:50.401 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    108.251µs|   match|[97;46m POST    [0m /admin/users/add   r:/admin/users/add
+2020/05/13 14:20:50.425 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  20.011124ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:20:59.981 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.595569ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:23:02.933 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   6.143711ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:23:03.218 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    343.417µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 14:23:05.593 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     76.623µs|   match|[97;46m POST    [0m /admin/users/add   r:/admin/users/add
+2020/05/13 14:23:05.618 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  10.103402ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:23:13.296 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.828485ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:23:13.564 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|      84.79µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 14:23:13.858 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.067981ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:23:14.145 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    132.327µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 14:23:14.220 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.671397ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:23:14.478 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.716474ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:23:14.558 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.959771ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:23:14.848 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.265158ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:23:14.985 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.912123ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:23:15.415 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    151.221µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 14:23:16.001 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.659155ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:23:19.659 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     167.29µs|   match|[97;46m POST    [0m /admin/users/add   r:/admin/users/add
+2020/05/13 14:23:19.673 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   10.62718ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:24:01.657 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 14:24:03.499 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|    303.591µs| nomatch|[97;44m GET     [0m /admin/token/add
+2020/05/13 14:24:03.514 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    596.638µs|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 14:24:05.247 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    714.849µs|   match|[97;46m POST    [0m /login   r:/login
+2020/05/13 14:24:05.293 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  25.275023ms|   match|[97;44m GET     [0m /admin/dashboard   r:/admin/dashboard
+2020/05/13 14:24:08.876 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.603491ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:24:11.212 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  10.539903ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:24:11.213 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.057609ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:25:41.907 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 14:25:47.669 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|    529.692µs| nomatch|[97;46m POST    [0m /admin/token/add
+2020/05/13 14:25:47.673 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|     97.211µs| nomatch|[97;44m GET     [0m /admin/token/add
+2020/05/13 14:25:47.700 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.097067ms|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 14:25:47.710 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   7.406074ms|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 14:25:49.464 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    792.095µs|   match|[97;46m POST    [0m /login   r:/login
+2020/05/13 14:25:49.505 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  20.261554ms|   match|[97;44m GET     [0m /admin/dashboard   r:/admin/dashboard
+2020/05/13 14:25:51.686 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   6.180082ms|   match|[97;44m GET     [0m /admin/token   r:/admin/token
+2020/05/13 14:25:54.012 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.975385ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:25:56.769 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   7.836425ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:25:56.775 [I] [insert.go:90]  用户插入错误 Error 1062: Duplicate entry '0' for key 'PRIMARY' 
+2020/05/13 14:25:56.776 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  16.028811ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:26:06.325 [I] [insert.go:90]  用户插入错误 Error 1062: Duplicate entry '0' for key 'PRIMARY' 
+2020/05/13 14:26:06.325 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.496273ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:26:06.329 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.731013ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:26:21.221 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.230455ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:26:21.490 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.634345ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:26:21.848 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.246225ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:26:22.375 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.618366ms|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 14:26:23.931 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.719967ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:26:23.970 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   44.56728ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:27:06.610 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 14:27:21.264 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|    282.125µs| nomatch|[97;44m GET     [0m /admin/token/add
+2020/05/13 14:27:21.286 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    920.353µs|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 14:27:22.532 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    724.287µs|   match|[97;46m POST    [0m /login   r:/login
+2020/05/13 14:27:22.619 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  20.452853ms|   match|[97;44m GET     [0m /admin/dashboard   r:/admin/dashboard
+2020/05/13 14:27:24.212 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    5.37175ms|   match|[97;44m GET     [0m /admin/token   r:/admin/token
+2020/05/13 14:27:26.202 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.765347ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:27:31.345 [C] [panic.go:522]  the request url is  /admin/token/add
+2020/05/13 14:27:31.346 [C] [panic.go:522]  Handler crashed with error Error 1146: Table 'lanotp.ws_otp' doesn't exist
+2020/05/13 14:27:31.346 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2020/05/13 14:27:31.346 [C] [panic.go:522]  /Users/waso/go/src/github.com/astaxie/beego/orm/db_alias.go:182
+2020/05/13 14:27:31.346 [C] [panic.go:522]  /Users/waso/go/src/github.com/astaxie/beego/orm/db.go:360
+2020/05/13 14:27:31.346 [C] [panic.go:522]  /Users/waso/go/src/github.com/astaxie/beego/orm/orm.go:129
+2020/05/13 14:27:31.346 [C] [panic.go:522]  /Users/waso/go/src/ewangsong/LanOTP/models/insert.go:78
+2020/05/13 14:27:31.346 [C] [panic.go:522]  /Users/waso/go/src/ewangsong/LanOTP/controllers/tokencontroller.go:182
+2020/05/13 14:27:31.346 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2020/05/13 14:27:31.346 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2020/05/13 14:27:31.346 [C] [panic.go:522]  /Users/waso/go/src/github.com/astaxie/beego/router.go:853
+2020/05/13 14:27:31.346 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2020/05/13 14:27:31.346 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2020/05/13 14:27:31.346 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2020/05/13 14:27:31.346 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/05/13 14:27:31.373 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    3.76046ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:27:45.932 [C] [panic.go:522]  the request url is  /admin/token/add
+2020/05/13 14:27:45.932 [C] [panic.go:522]  Handler crashed with error Error 1146: Table 'lanotp.ws_otp' doesn't exist
+2020/05/13 14:27:45.935 [C] [panic.go:522]  /usr/local/go/src/runtime/panic.go:522
+2020/05/13 14:27:45.935 [C] [panic.go:522]  /Users/waso/go/src/github.com/astaxie/beego/orm/db_alias.go:182
+2020/05/13 14:27:45.935 [C] [panic.go:522]  /Users/waso/go/src/github.com/astaxie/beego/orm/db.go:360
+2020/05/13 14:27:45.942 [C] [panic.go:522]  /Users/waso/go/src/github.com/astaxie/beego/orm/orm.go:129
+2020/05/13 14:27:45.942 [C] [panic.go:522]  /Users/waso/go/src/ewangsong/LanOTP/models/insert.go:78
+2020/05/13 14:27:45.943 [C] [panic.go:522]  /Users/waso/go/src/ewangsong/LanOTP/controllers/tokencontroller.go:182
+2020/05/13 14:27:45.943 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:447
+2020/05/13 14:27:45.944 [C] [panic.go:522]  /usr/local/go/src/reflect/value.go:308
+2020/05/13 14:27:45.944 [C] [panic.go:522]  /Users/waso/go/src/github.com/astaxie/beego/router.go:853
+2020/05/13 14:27:45.944 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:2774
+2020/05/13 14:27:45.944 [C] [panic.go:522]  /usr/local/go/src/net/http/server.go:1878
+2020/05/13 14:27:45.944 [C] [panic.go:522]  /usr/local/go/src/runtime/asm_amd64.s:1337
+2020/05/13 14:27:45.945 [server.go:3010]  [HTTP] http: superfluous response.WriteHeader call from github.com/astaxie/beego/context.(*Response).WriteHeader (context.go:230)
+2020/05/13 14:27:45.953 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   7.247917ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:28:07.092 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 14:28:21.733 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|    228.744µs| nomatch|[97;44m GET     [0m /admin/token/add
+2020/05/13 14:28:21.760 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.028686ms|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 14:28:23.062 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    865.633µs|   match|[97;46m POST    [0m /login   r:/login
+2020/05/13 14:28:23.156 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  26.513247ms|   match|[97;44m GET     [0m /admin/dashboard   r:/admin/dashboard
+2020/05/13 14:28:24.987 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    5.15814ms|   match|[97;44m GET     [0m /admin/token   r:/admin/token
+2020/05/13 14:28:27.025 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.900422ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:28:32.274 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   9.227255ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:28:32.283 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  23.488619ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:28:37.351 [I] [insert.go:90]  用户插入错误 Error 1062: Duplicate entry '0' for key 'PRIMARY' 
+2020/05/13 14:28:37.352 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.818404ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:28:37.355 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.208615ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:29:26.956 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 14:29:39.964 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 14:29:42.526 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|    747.699µs| nomatch|[97;44m GET     [0m /admin/token/add
+2020/05/13 14:29:42.541 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    548.105µs|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 14:29:43.840 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    782.698µs|   match|[97;46m POST    [0m /login   r:/login
+2020/05/13 14:29:43.880 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  20.391448ms|   match|[97;44m GET     [0m /admin/dashboard   r:/admin/dashboard
+2020/05/13 14:29:45.774 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.200097ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:29:47.680 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   6.575091ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:29:47.685 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  22.682842ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:29:49.927 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.134474ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:29:49.978 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  59.104326ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:29:52.251 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.499384ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:29:52.270 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.020841ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:29:52.315 [I] [tokencontroller.go:110]  获取用户ID错误 strconv.Atoi: parsing "": invalid syntax 
+2020/05/13 14:29:52.317 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.852702ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 14:32:36.994 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.084314ms|   match|[97;44m GET     [0m /admin/users/add   r:/admin/users/add
+2020/05/13 14:32:43.735 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    7.02873ms|   match|[97;44m GET     [0m /admin/users/add   r:/admin/users/add
+2020/05/13 14:32:43.735 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  10.778714ms|   match|[97;46m POST    [0m /admin/users/add   r:/admin/users/add
+2020/05/13 14:32:47.519 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.262094ms|   match|[97;44m GET     [0m /admin/users/add   r:/admin/users/add
+2020/05/13 14:32:47.780 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.132134ms|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 14:32:59.033 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   7.905303ms|   match|[97;46m POST    [0m /admin/users/add   r:/admin/users/add
+2020/05/13 14:32:59.034 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   6.164751ms|   match|[97;44m GET     [0m /admin/users/add   r:/admin/users/add
+2020/05/13 14:32:59.096 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.490923ms|   match|[97;44m GET     [0m /admin/users/detail   r:/admin/users/detail
+2020/05/13 14:37:24.882 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 14:37:32.817 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|    489.062µs| nomatch|[97;44m GET     [0m /admin/token/add
+2020/05/13 14:37:32.840 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     886.08µs|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 14:37:34.194 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    698.358µs|   match|[97;46m POST    [0m /login   r:/login
+2020/05/13 14:37:34.244 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  20.807074ms|   match|[97;44m GET     [0m /admin/dashboard   r:/admin/dashboard
+2020/05/13 14:37:36.691 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    2.80917ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:37:39.248 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   8.255618ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:37:39.253 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  17.448054ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:38:17.046 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 14:38:21.741 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|    480.731µs| nomatch|[97;44m GET     [0m /admin/token/add
+2020/05/13 14:38:21.766 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.598656ms|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 14:38:23.047 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    751.251µs|   match|[97;46m POST    [0m /login   r:/login
+2020/05/13 14:38:23.095 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  23.605199ms|   match|[97;44m GET     [0m /admin/dashboard   r:/admin/dashboard
+2020/05/13 14:38:25.465 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.631847ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:38:28.135 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  18.296045ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:38:28.146 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  34.381581ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:39:18.264 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.649555ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:39:18.792 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.068377ms|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 14:39:20.869 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  20.913607ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:39:20.885 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  41.254576ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:39:48.275 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   6.980509ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:39:48.357 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  94.037848ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:39:52.377 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.173858ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:39:52.395 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  26.220593ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:40:13.922 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 14:40:16.488 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|    223.789µs| nomatch|[97;44m GET     [0m /admin/token/add
+2020/05/13 14:40:16.506 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    871.503µs|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 14:40:18.073 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    736.741µs|   match|[97;46m POST    [0m /login   r:/login
+2020/05/13 14:40:18.159 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  18.258767ms|   match|[97;44m GET     [0m /admin/dashboard   r:/admin/dashboard
+2020/05/13 14:40:19.917 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    5.72882ms|   match|[97;44m GET     [0m /admin/token   r:/admin/token
+2020/05/13 14:40:25.630 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.757278ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:40:29.296 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   7.837329ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:40:29.300 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  21.554477ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:40:29.360 [I] [tokencontroller.go:112]  获取用户ID错误 strconv.Atoi: parsing "": invalid syntax 
+2020/05/13 14:40:29.362 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.128974ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 14:42:15.217 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 14:42:45.886 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 14:42:47.621 [I] [tokencontroller.go:112]  获取用户ID错误 strconv.Atoi: parsing "": invalid syntax 
+2020/05/13 14:42:47.625 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.964334ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 14:42:48.159 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    578.117µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 14:42:50.841 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.664943ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:42:53.472 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  10.184133ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:42:53.488 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  27.127679ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:46:28.072 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  10.574539ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:46:28.459 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     79.164µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 14:46:30.332 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   8.876372ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:46:30.339 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  27.258765ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:46:38.047 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.946637ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:46:38.066 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  30.073704ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:50:11.466 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 14:50:16.851 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.899297ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:50:17.249 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    678.166µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 14:50:18.879 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  11.606867ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:50:18.913 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  50.444285ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:50:29.771 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   8.980833ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:50:29.771 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  24.412832ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:50:29.815 [I] [tokencontroller.go:112]  获取用户ID错误 strconv.Atoi: parsing "": invalid syntax 
+2020/05/13 14:50:29.818 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.500796ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 14:59:13.123 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 14:59:18.169 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.535655ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:59:20.557 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.672323ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:59:20.581 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  48.369445ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:59:20.629 [I] [tokencontroller.go:112]  获取用户ID错误 strconv.Atoi: parsing "": invalid syntax 
+2020/05/13 14:59:20.634 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.590283ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 14:59:25.263 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.799768ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:59:30.223 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  22.475599ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 14:59:30.257 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  60.262523ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:03:59.898 [I] [insert.go:90]  用户插入错误 Error 1366: Incorrect string value: '\xE5\x88\x86\xE8\xBA\xAB...' for column 'binding_user' at row 1 
+2020/05/13 15:03:59.898 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.196848ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:03:59.951 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.240045ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:04:07.086 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  14.655491ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:04:07.104 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  37.118376ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:07:53.146 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.335197ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:07:53.511 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|      453.8µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:08:17.396 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.788545ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:08:17.740 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     70.267µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:08:21.685 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.634059ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:08:21.758 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  94.968517ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:09:35.587 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.096081ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:09:35.615 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  38.603166ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:10:46.341 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 15:10:51.352 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  10.919694ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:10:51.382 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   45.11079ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:12:47.959 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 15:12:55.629 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  12.048655ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:12:55.666 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  52.668956ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:12:59.331 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   8.617712ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:12:59.358 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  39.925584ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:13:59.705 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 15:14:01.973 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   7.431748ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:14:02.018 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  61.258971ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:14:38.542 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 15:14:43.457 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   9.469437ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:14:43.486 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  41.365861ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:15:10.317 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 15:15:13.735 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    6.13518ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:15:13.804 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   79.50507ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:15:57.717 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 15:16:01.432 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   22.77732ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:16:01.440 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  14.055043ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:16:01.487 [I] [tokencontroller.go:112]  获取用户ID错误 strconv.Atoi: parsing "": invalid syntax 
+2020/05/13 15:16:01.491 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.369193ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:17:09.691 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   6.165651ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:17:52.101 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 15:17:56.038 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   9.578313ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:17:56.052 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  46.424849ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:18:00.628 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   7.181673ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:18:00.654 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   37.49969ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:18:05.999 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  12.151865ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:18:06.016 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  31.838337ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:19:12.642 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.301406ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:19:12.996 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    433.103µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:19:13.129 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    3.06467ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:19:13.498 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.295938ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:19:13.693 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.750292ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:19:13.990 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.655862ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:19:14.271 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.298975ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:19:14.386 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.458278ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:19:14.899 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    124.713µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:19:25.459 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.781048ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:19:25.481 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  29.277377ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:19:35.730 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.357378ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:19:38.183 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.580303ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:19:38.197 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  20.819182ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:20:54.733 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 15:20:56.489 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  13.700636ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:20:59.807 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.603808ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:20:59.853 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  49.558639ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:21:26.784 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   7.948046ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:21:27.260 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    157.348µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:21:31.284 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.087209ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:21:31.572 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     87.618µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:21:31.870 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.141095ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:21:32.144 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|      71.99µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:21:32.269 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    2.55391ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:21:32.501 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.197568ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:21:32.816 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    2.44004ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:21:33.025 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.546243ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:21:33.330 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.042606ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:21:33.648 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     72.525µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:21:35.667 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  21.951783ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:21:35.732 [I] [tokencontroller.go:112]  获取用户ID错误 strconv.Atoi: parsing "": invalid syntax 
+2020/05/13 15:21:35.738 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   6.364225ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:22:04.448 [I] [tokencontroller.go:112]  获取用户ID错误 strconv.Atoi: parsing "": invalid syntax 
+2020/05/13 15:22:04.452 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.395861ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:22:04.905 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     80.922µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:22:05.811 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.839605ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:22:08.112 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   9.255999ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:22:08.121 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  25.151909ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:23:46.541 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 15:23:49.955 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  10.707687ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:23:50.012 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  85.301843ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:23:55.414 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    2.08599ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:23:55.661 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    550.944µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:24:00.319 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   10.21761ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:24:00.337 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   36.13872ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:24:04.417 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.274143ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:24:07.415 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  24.137465ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:24:07.425 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  41.302316ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:30:28.166 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 15:30:31.725 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|    441.214µs| nomatch|[97;44m GET     [0m /admin/token/add
+2020/05/13 15:30:31.757 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.278017ms|   match|[97;44m GET     [0m /login   r:/login
+2020/05/13 15:30:32.875 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.118927ms|   match|[97;46m POST    [0m /login   r:/login
+2020/05/13 15:30:32.958 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  20.275829ms|   match|[97;44m GET     [0m /admin/dashboard   r:/admin/dashboard
+2020/05/13 15:30:34.829 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.931743ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:30:37.535 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  12.113084ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:30:37.558 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  43.690685ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:32:43.804 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  26.100418ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:32:43.804 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  22.091379ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:32:43.859 [I] [tokencontroller.go:112]  获取用户ID错误 strconv.Atoi: parsing "": invalid syntax 
+2020/05/13 15:32:43.864 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.317337ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:33:40.764 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.165704ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:33:43.660 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  13.678332ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:33:43.687 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  43.295379ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:33:53.177 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 15:33:55.428 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.597469ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:33:55.695 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.636022ms|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:33:57.728 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.139013ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:33:57.766 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  46.680669ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:34:00.601 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  14.221907ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:34:00.601 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   9.969604ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:34:00.641 [I] [read.go:59]  查询用户错误 <QuerySeter> no row found 
+2020/05/13 15:34:00.644 [D] [controller.go:306]  template Execute err: template: token_detail.html:82:34: executing "token_detail.html" at <.Password>: can't evaluate field Password in type models.WsUsers
+2020/05/13 15:34:00.644 [E] [server.go:2774]  template: token_detail.html:82:34: executing "token_detail.html" at <.Password>: can't evaluate field Password in type models.WsUsers
+2020/05/13 15:34:00.644 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.078463ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:34:14.657 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  16.784503ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:34:14.658 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  12.104613ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:34:14.711 [I] [read.go:59]  查询用户错误 <QuerySeter> no row found 
+2020/05/13 15:34:14.715 [D] [controller.go:306]  template Execute err: template: token_detail.html:82:34: executing "token_detail.html" at <.Password>: can't evaluate field Password in type models.WsUsers
+2020/05/13 15:34:14.715 [E] [server.go:2774]  template: token_detail.html:82:34: executing "token_detail.html" at <.Password>: can't evaluate field Password in type models.WsUsers
+2020/05/13 15:34:14.715 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.349343ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:38:20.209 [I] [read.go:59]  查询用户错误 <QuerySeter> no row found 
+2020/05/13 15:38:20.212 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.377519ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:38:20.747 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     78.815µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:39:02.395 [I] [read.go:59]  查询用户错误 <QuerySeter> no row found 
+2020/05/13 15:39:02.400 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   7.387089ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:39:02.762 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    565.924µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:39:07.647 [I] [read.go:59]  查询用户错误 <QuerySeter> no row found 
+2020/05/13 15:39:07.651 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.144221ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:39:07.939 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    273.203µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:39:20.070 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 15:39:21.953 [D] [controller.go:306]  template Execute err: template: token_detail.html:74:30: executing "token_detail.html" at <.RealName>: can't evaluate field RealName in type models.WsOtp
+2020/05/13 15:39:21.953 [E] [server.go:2774]  template: token_detail.html:74:30: executing "token_detail.html" at <.RealName>: can't evaluate field RealName in type models.WsOtp
+2020/05/13 15:39:21.953 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   6.434723ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:39:22.086 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    524.642µs|   match|[97;44m GET     [0m /favicon.ico
+2020/05/13 15:41:57.137 [D] [controller.go:306]  template Execute err: template: token_detail.html:76:41: executing "token_detail.html" at <.CreateTime.Format>: can't evaluate field CreateTime in type models.WsOtp
+2020/05/13 15:41:57.137 [E] [server.go:2774]  template: token_detail.html:76:41: executing "token_detail.html" at <.CreateTime.Format>: can't evaluate field CreateTime in type models.WsOtp
+2020/05/13 15:41:57.138 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   8.900561ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:41:57.495 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     83.512µs|   match|[97;44m GET     [0m /favicon.ico
+2020/05/13 15:43:18.319 [D] [controller.go:306]  template Execute err: template: token_detail.html:80:34: executing "token_detail.html" at <.BindUser>: can't evaluate field BindUser in type models.WsOtp
+2020/05/13 15:43:18.319 [E] [server.go:2774]  template: token_detail.html:80:34: executing "token_detail.html" at <.BindUser>: can't evaluate field BindUser in type models.WsOtp
+2020/05/13 15:43:18.320 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.895039ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:43:18.684 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     83.291µs|   match|[97;44m GET     [0m /favicon.ico
+2020/05/13 15:43:22.145 [D] [controller.go:306]  template Execute err: template: token_detail.html:80:34: executing "token_detail.html" at <.BindUser>: can't evaluate field BindUser in type models.WsOtp
+2020/05/13 15:43:22.145 [E] [server.go:2774]  template: token_detail.html:80:34: executing "token_detail.html" at <.BindUser>: can't evaluate field BindUser in type models.WsOtp
+2020/05/13 15:43:22.145 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.689458ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:43:22.439 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     130.36µs|   match|[97;44m GET     [0m /favicon.ico
+2020/05/13 15:43:47.501 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    4.48495ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:43:47.986 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     77.353µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:44:24.259 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.141657ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:44:24.658 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    113.826µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:44:41.299 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.079485ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:44:41.763 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|      80.29µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:45:03.738 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    2.87693ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:45:04.085 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    405.684µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:45:26.789 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.859948ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:45:27.140 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    125.456µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:46:47.973 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.094367ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:46:48.479 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     96.194µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:47:21.840 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.380373ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:47:22.221 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     78.781µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:47:35.431 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.528317ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:47:35.705 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     72.849µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:47:51.097 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     3.2601ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:47:51.454 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     75.972µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:48:42.725 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.530257ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:48:43.247 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    120.601µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:48:57.881 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.971836ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:48:58.155 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     74.597µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:49:12.207 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.899174ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:49:12.468 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    113.686µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:49:12.709 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.251366ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:49:12.963 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.245193ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:49:13.458 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.960344ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:49:13.537 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    4.08584ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 15:49:13.787 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     97.395µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:49:22.896 [I] [tokencontroller.go:126]  获取用户ID错误 strconv.Atoi: parsing "": invalid syntax 
+2020/05/13 15:49:22.899 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.060001ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 15:49:57.861 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.044745ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:50:03.627 [I] [insert.go:91]  用户插入错误 Error 1366: Incorrect string value: '\xE6\xBB\x9A\xE6\xBB\x9A...' for column 'binding_user' at row 1 
+2020/05/13 15:50:03.629 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.887895ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:50:03.638 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    9.84086ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:50:17.911 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  11.546604ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:50:17.934 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  50.963382ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:50:29.159 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.508651ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:50:29.190 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  42.253313ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:50:54.600 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    8.29287ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:50:54.991 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    109.419µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 15:50:56.894 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   15.19876ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:50:56.913 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  38.182777ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:52:15.346 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.033551ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:52:15.354 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  34.634861ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:52:17.253 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   9.333089ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:52:17.279 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  47.695322ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:52:19.317 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  16.789004ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 15:52:19.325 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  27.605907ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 17:47:07.836 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 17:47:18.391 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  16.008734ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 17:47:18.437 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   7.298478ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 17:47:18.527 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.522161ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 17:47:18.649 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|    990.009µs|   match|[97;44m GET     [0m /static/css/bootstrap.min.css
+2020/05/13 17:47:18.651 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|   1.419705ms|   match|[97;44m GET     [0m /static/css/ionicons.min.css
+2020/05/13 17:47:18.652 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|   2.429506ms|   match|[97;44m GET     [0m /static/css/skins/_all-skins.min.css
+2020/05/13 17:47:18.653 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|   3.606937ms|   match|[97;44m GET     [0m /static/css/AdminLTE.min.css
+2020/05/13 17:47:18.654 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|   3.672173ms|   match|[97;44m GET     [0m /static/css/manage.css
+2020/05/13 17:47:18.655 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|    5.00539ms|   match|[97;44m GET     [0m /static/plugins/jQuery/jQuery-2.2.0.min.js
+2020/05/13 17:47:18.655 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|   6.187328ms|   match|[97;44m GET     [0m /static/css/font-awesome.min.css
+2020/05/13 17:47:18.879 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|    373.997µs|   match|[97;44m GET     [0m /static/js/json2.js
+2020/05/13 17:47:18.882 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|   1.939149ms|   match|[97;44m GET     [0m /static/js/bootstrap.min.js
+2020/05/13 17:47:18.909 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|    473.876µs|   match|[97;44m GET     [0m /static/plugins/slimScroll/jquery.slimscroll.min.js
+2020/05/13 17:47:18.943 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|    415.687µs|   match|[97;44m GET     [0m /static/plugins/fastclick/fastclick.min.js
+2020/05/13 17:47:18.957 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|    607.214µs|   match|[97;44m GET     [0m /static/js/app.min.js
+2020/05/13 17:47:18.990 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|    340.854µs|   match|[97;44m GET     [0m /static/img/toughradius-logo.png
+2020/05/13 17:47:19.059 [D] [server.go:2774]  |      127.0.0.1|[90;47m 304 [0m|    728.175µs|   match|[97;44m GET     [0m /static/fonts/fontawesome-webfont.woff2
+2020/05/13 17:47:30.228 [I] [tokencontroller.go:126]  获取用户ID错误 strconv.Atoi: parsing "": invalid syntax 
+2020/05/13 17:47:30.233 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.274679ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 17:52:06.499 [I] [tokencontroller.go:126]  获取用户ID错误 strconv.Atoi: parsing "": invalid syntax 
+2020/05/13 17:52:06.503 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.949973ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 17:52:07.002 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    477.141µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 17:52:53.231 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 17:52:56.443 [D] [controller.go:306]  template Execute err: template: token_update.html:26:64: executing "token_update.html" at <.RealName>: can't evaluate field RealName in type models.WsOtp
+2020/05/13 17:52:56.444 [E] [server.go:2774]  template: token_update.html:26:64: executing "token_update.html" at <.RealName>: can't evaluate field RealName in type models.WsOtp
+2020/05/13 17:52:56.444 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.553221ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 17:52:56.668 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    331.234µs|   match|[97;44m GET     [0m /favicon.ico
+2020/05/13 17:54:50.304 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.597128ms|   match|[97;44m GET     [0m /admin/users/add   r:/admin/users/add
+2020/05/13 17:54:52.440 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.946394ms|   match|[97;44m GET     [0m /admin/users   r:/admin/users
+2020/05/13 17:54:53.670 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.402618ms|   match|[97;44m GET     [0m /admin/users/detail   r:/admin/users/detail
+2020/05/13 17:54:55.060 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.923262ms|   match|[97;44m GET     [0m /admin/users/update   r:/admin/users/update
+2020/05/13 17:56:12.393 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.280354ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 17:56:15.901 [I] [insert.go:91]  用户插入错误 Error 1366: Incorrect string value: '\xE5\x88\x86\xE8\xBA\xAB...' for column 'binding_user' at row 1 
+2020/05/13 17:56:15.902 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  19.255459ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 17:56:15.916 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  30.554581ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 17:56:20.330 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  23.418432ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 17:56:20.347 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  46.314382ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 17:56:24.730 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.204396ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 17:56:24.756 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  34.027554ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 17:56:29.573 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.433117ms|   match|[97;44m GET     [0m /admin/token   r:/admin/token
+2020/05/13 17:56:34.052 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    2.93384ms|   match|[97;44m GET     [0m /admin/users/detail   r:/admin/users/detail
+2020/05/13 17:56:40.693 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.539275ms|   match|[97;44m GET     [0m /admin/token   r:/admin/token
+2020/05/13 17:56:42.668 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.065564ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 17:57:02.709 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  10.352756ms|   match|[97;44m GET     [0m /admin/users   r:/admin/users
+2020/05/13 17:57:07.440 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.023466ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 17:57:12.098 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   13.26052ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 17:57:12.103 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  20.661175ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add
+2020/05/13 17:57:24.987 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.847573ms|   match|[97;44m GET     [0m /admin/token/detail   r:/admin/token/detail
+2020/05/13 18:01:55.561 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    6.38367ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:02:22.567 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.365941ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:02:22.949 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    421.463µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 18:03:38.942 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.825672ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:03:39.399 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     77.936µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 18:04:52.001 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.384835ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:04:52.479 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     72.216µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 18:05:38.631 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.307212ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:05:39.120 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   1.160925ms|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 18:06:09.423 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.383126ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:06:09.823 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     70.304µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 18:06:49.907 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   6.745602ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:06:50.340 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     80.358µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 18:07:20.107 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.370723ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:07:20.481 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     79.389µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 18:07:57.981 [I] [tokencontroller.go:137]  获取用户ID错误 strconv.Atoi: parsing "": invalid syntax 
+2020/05/13 18:07:57.986 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.550609ms|   match|[97;46m POST    [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:08:03.945 [I] [tokencontroller.go:137]  获取用户ID错误 strconv.Atoi: parsing "": invalid syntax 
+2020/05/13 18:08:03.948 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.627986ms|   match|[97;46m POST    [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:08:04.201 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    104.163µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 18:08:05.273 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.950507ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:08:58.945 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.462679ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:08:59.307 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     77.068µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 18:09:00.117 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.509506ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:09:00.454 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|     94.262µs|   match|[97;44m GET     [0m /static/favicon.ico
+2020/05/13 18:09:01.952 [I] [tokencontroller.go:137]  获取用户ID错误 strconv.Atoi: parsing "": invalid syntax 
+2020/05/13 18:09:01.955 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   2.761375ms|   match|[97;46m POST    [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:09:20.789 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.344478ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:09:56.854 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 18:09:59.147 [I] [update.go:57]  用户更新错误 <QuerySeter> no row found 
+2020/05/13 18:09:59.150 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|   4.478977ms|   match|[97;46m POST    [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:09:59.180 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   9.162568ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:10:05.612 [I] [update.go:57]  用户更新错误 <QuerySeter> no row found 
+2020/05/13 18:10:05.613 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|   1.797282ms|   match|[97;46m POST    [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:10:05.633 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   4.119545ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:10:06.440 [I] [update.go:57]  用户更新错误 <QuerySeter> no row found 
+2020/05/13 18:10:06.441 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|   1.441831ms|   match|[97;46m POST    [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:10:06.458 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.495902ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:13:21.771 [I] [asm_amd64.s:1337]  http server Running on http://:9091
+2020/05/13 18:13:24.430 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|   3.772469ms|   match|[97;46m POST    [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:13:24.444 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.254459ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:13:26.129 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|   4.332092ms|   match|[97;46m POST    [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:13:26.150 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.477498ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:13:26.947 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|   1.552731ms|   match|[97;46m POST    [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:13:26.961 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   5.233021ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:13:33.242 [D] [server.go:2774]  |      127.0.0.1|[90;47m 302 [0m|   2.424198ms|   match|[97;46m POST    [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:13:33.261 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|    3.80763ms|   match|[97;44m GET     [0m /admin/token/update   r:/admin/token/update
+2020/05/13 18:13:54.015 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   3.742928ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 18:13:58.343 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|   23.66859ms|   match|[97;44m GET     [0m /admin/token/add   r:/admin/token/add
+2020/05/13 18:13:58.356 [D] [server.go:2774]  |      127.0.0.1|[97;42m 200 [0m|  49.610659ms|   match|[97;46m POST    [0m /admin/token/add   r:/admin/token/add

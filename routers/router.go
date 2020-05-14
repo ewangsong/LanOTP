@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"radiusweb/controllers"
+	"ewangsong/LanOTP/controllers"
 
 	"github.com/astaxie/beego"
 )
@@ -32,5 +32,10 @@ func init() {
 	beego.Router("/admin/users/update", &controllers.UserController{}, "get:UpdateUsers;post:PostUpdateUsers")
 	beego.Router("/admin/users/delete", &controllers.UserController{}, "get:DeleteUser")
 	beego.Router("/admin/users/add", &controllers.UserController{}, "get:AddUser;post:PostAddUser")
-
+	//token 路由
+	beego.Router("/admin/token", &controllers.TokenController{}, "get:ShowToken;post:PostShowToken")
+	beego.Router("/admin/token/detail", &controllers.TokenController{}, "get:DetailToken")
+	beego.Router("/admin/token/update", &controllers.TokenController{}, "get:UpdateToken;post:PostUpdateToken")
+	beego.Router("/admin/token/delete", &controllers.TokenController{}, "get:DeleteToken")
+	beego.Router("/admin/token/add", &controllers.TokenController{}, "get:AddToken;post:PostAddToken")
 }

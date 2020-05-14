@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"radiusweb/models"
+	"ewangsong/LanOTP/models"
 
 	"github.com/astaxie/beego"
 )

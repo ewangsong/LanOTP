@@ -16,6 +16,7 @@ func BsaDelete(id int) {
 	}
 }
 
+//UserDelete 删除用户
 func UserDelete(id int) {
 	o := orm.NewOrm()
 	user := WsUsers{Id: id}
@@ -23,6 +24,18 @@ func UserDelete(id int) {
 	_, err := o.Delete(&user)
 	if err != nil {
 		beego.Info("删除用户错误", err)
+		return
+	}
+}
+
+//TokenDelete 删除token
+func TokenDelete(id int) {
+	o := orm.NewOrm()
+	token := WsOtp{Id: id}
+
+	_, err := o.Delete(&token)
+	if err != nil {
+		beego.Info("删除token错误", err)
 		return
 	}
 }

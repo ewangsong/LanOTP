@@ -107,3 +107,16 @@ func UsersRead5(s string) string {
 	url := "/admin/users/detail?user_id=" + id
 	return url
 }
+
+//查询token
+func TokenRead(id int) []WsOtp {
+	token := WsOtp{Id: id}
+	o := orm.NewOrm()
+	err := o.Read(&token)
+	if err != nil {
+		beego.Info("查询token错误", err)
+	}
+	var tokens []WsOtp
+	tokens = append(tokens, token)
+	return tokens
+}

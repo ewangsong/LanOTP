@@ -3,6 +3,7 @@ package models
 import (
 	// "fmt"
 
+	"fmt"
 	html "html/template"
 	con "strconv"
 	"strings"
@@ -13,19 +14,19 @@ import (
 )
 
 type PageOptions struct {
-	TableName           string   //表名  -----------------[必填]
-	Conditions          []string //条件
-	Currentpage         int      //当前页 ,默认1 每次分页,必须在前台设置新的页数,不设置始终默认1.在控制器中使用方式:cp, _ := this.GetInt("pno")   po.Currentpage = int(cp)
-	PageSize            int      //页面大小,默认20
-	LinkItemCount       int      //生成A标签的个数 默认10个
-	Href                string   //A标签的链接地址  ---------[不需要设置]
-	ParamName           string   //参数名称  默认是pno
-	FirstPageText       string   //首页文字  默认"首页"
-	LastPageText        string   //尾页文字  默认"尾页"
-	PrePageText         string   //上一页文字 默认"上一页"
-	NextPageText        string   //下一页文字 默认"下一页"
-	EnableFirstLastLink bool     //是否启用首尾连接 默认false 建议开启
-	EnablePreNexLink    bool     //是否启用上一页,下一页连接 默认false 建议开启
+	TableName           string //表名  -----------------[必填]
+	Conditions          string //条件
+	Currentpage         int    //当前页 ,默认1 每次分页,必须在前台设置新的页数,不设置始终默认1.在控制器中使用方式:cp, _ := this.GetInt("pno")   po.Currentpage = int(cp)
+	PageSize            int    //页面大小,默认20
+	LinkItemCount       int    //生成A标签的个数 默认10个
+	Href                string //A标签的链接地址  ---------[不需要设置]
+	ParamName           string //参数名称  默认是pno
+	FirstPageText       string //首页文字  默认"首页"
+	LastPageText        string //尾页文字  默认"尾页"
+	PrePageText         string //上一页文字 默认"上一页"
+	NextPageText        string //下一页文字 默认"下一页"
+	EnableFirstLastLink bool   //是否启用首尾连接 默认false 建议开启
+	EnablePreNexLink    bool   //是否启用上一页,下一页连接 默认false 建议开启
 }
 
 /**
@@ -33,7 +34,7 @@ type PageOptions struct {
  * 返回 总记录条数,总页数,以及当前请求的数据RawSeter,调用中需要"rs.QueryRows(&tblog)"就行了  --tblog是一个Tb_log对象
  * 参数：表名，当前页数，页面大小，条件（查询条件,格式为 " and name='zhifeiya' and age=12 "）
  */
-func GetPagesInfo(tableName string, currentpage int, pagesize int, conditions []string) (int, int, orm.RawSeter) {
+func GetPagesInfo(tableName string, currentpage int, pagesize int, conditions string) (int, int, orm.RawSeter) {
 	if currentpage <= 1 {
 		currentpage = 1
 	}
@@ -43,15 +44,8 @@ func GetPagesInfo(tableName string, currentpage int, pagesize int, conditions []
 	var rs orm.RawSeter
 	o := orm.NewOrm()
 	var totalItem, totalpages int = 0, 0 //总条数,总页数
-	if conditions[0] == "" {
-		conditions[0] = "where real_name like ?"
-	}
-	if conditions[1] == "" {
-		conditions[1] = "%%"
-	}
-	o.Raw("SELECT count(*) FROM "+tableName+" "+conditions[0], conditions[1]).QueryRow(&totalItem) //获取总条数
-	//o.Raw("SELECT count(*) FROM ws_users where real_name like ?"+`,` "%王松%").QueryRow(&totalItem)
-
+	fmt.Println("SELECT count(*) FROM " + tableName + " where 1>0 " + conditions)
+	o.Raw("SELECT count(*) FROM " + tableName + " where 1>0 " + conditions).QueryRow(&totalItem) //获取总条数
 	if totalItem <= pagesize {
 		totalpages = 1
 	} else if totalItem > pagesize {
@@ -61,8 +55,8 @@ func GetPagesInfo(tableName string, currentpage int, pagesize int, conditions []
 		}
 		totalpages = temp
 	}
-	rs = o.Raw("select *  from  "+tableName+" "+conditions[0]+" LIMIT "+con.Itoa((currentpage-1)*pagesize)+","+con.Itoa(pagesize), conditions[1])
-	//rs = o.Raw("SELECT * FROM ws_users where real_name like ?"+" LIMIT "+con.Itoa((currentpage-1)*pagesize)+","+con.Itoa(pagesize), "%王松%")
+	rs = o.Raw("SELECT *  FROM " + tableName + "  where id >0 " + conditions + " LIMIT " + con.Itoa((currentpage-1)*pagesize) + "," + con.Itoa(pagesize))
+	fmt.Println(totalItem, totalpages, rs)
 	return totalItem, totalpages, rs
 }
 

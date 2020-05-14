@@ -1,0 +1,15 @@
+<script>
+          function check_samename() {
+              var typeid = $("#typeid").val();
+              var username = $("#username").val();
+            
+              $.post("/admin/token/add", {typeid:typeid, username:username},function (data) {
+                  if (data.code > 0) {
+                      alert(data.msg)
+                      return false;
+                  }else {
+                    window.location.href = data.url;
+                }
+              }, "json");
+          }
+  </script>

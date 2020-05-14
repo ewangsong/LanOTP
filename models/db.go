@@ -1,7 +1,6 @@
 package models
 
 import (
-	"fmt"
 	"time"
 
 	_ "github.com/Go-SQL-Driver/MySQL"
@@ -18,20 +17,22 @@ type WsAdmin struct {
 
 //otp信息
 type WsOtp struct {
-	OtpId       int `orm:"pk"`
+	Id          int `orm:"auto;pk"`
+	OtpSn       string
 	OtpType     int
 	Secret      string
-	BindingUser string
-	Counter     uint64
+	BindingUser string    `orm:"null"`
+	Counter     uint64    `orm:"null"`
 	OperatTime  time.Time `orm:"auto_now;type(datetime)"`
 }
 
 //用户信息
 type WsUsers struct {
-	Id         int `orm:"pk;auto"`
-	Name       string
-	RealName   string
-	CreateTime time.Time `orm:"auto_now;type(datetime)"`
+	Id           int `orm:"pk;auto"`
+	Name         string
+	RealName     string
+	BindingToken int       `orm:"null"`
+	CreateTime   time.Time `orm:"auto_now;type(datetime)"`
 }
 
 //bas信息
@@ -55,7 +56,6 @@ type WsLog struct {
 func init() {
 	dbtype := beego.AppConfig.String("dbtype")
 	dbinfo := beego.AppConfig.String("dbinfo")
-	fmt.Println(1)
 	orm.RegisterDataBase("default", dbtype, dbinfo)
 	orm.RegisterModel(new(WsOtp), new(WsUsers), new(WsAdmin), new(WsBas), new(WsLog))
 	orm.RunSyncdb("default", false, true)

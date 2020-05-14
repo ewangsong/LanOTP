@@ -3,20 +3,24 @@
         <div class="box box-default">
             <div class="box-header">
                 <i class="fa fa-user-plus"></i>
-                <h3 class="box-title">用户开户</h3>
+                <h3 class="box-title">新建令牌</h3>
                 <div class="bar pull-right"><a href="javascript:history.go(-1);">返回</a></div>
             </div>
+
             <div class="box-body">
                 <div class="container">
                 <form class="form-horizontal form-well" role="form">
                     <div class="form-group">
-        </div>
-        <div class="form-group">
-            <label class="col-sm-4 control-label" id="realname1" for="realname">姓名</label>
-            <div class="col-sm-6">
-            <input name="realname"  required="required" id="realname" type="text" class="form-control"/>
+                    </div>
+            <div class="form-group">
+            <label class="col-sm-4 control-label" id="lab_node_id" for="node_id">认证类型</label>
+                <div class="col-sm-6">
+                <select required="required" placeholder="认证类型" class="form-control" name="typeid" id="typeid">
+                 <option value="1">TOTP认证</option>
+                <option value="2">HOTP认证</option>
+                </select>
+                </div>
             </div>
-        </div>
         <div class="form-group">
             <label class="col-sm-4 control-label" id="name1" for="zname">账号</label>
             <div class="col-sm-6">

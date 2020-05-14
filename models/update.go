@@ -49,20 +49,36 @@ func BasUpdate(id int, name, ip_add, secret, port string) {
 }
 
 //用户修改
-// func UserUdate(id int, realname, name, password string) {
-// 	user := WsUsers{Id: id}
-// 	o := orm.NewOrm()
-// 	err1 := o.Read(&user)
-// 	if err1 != nil {
-// 		beego.Info("用户更新错误", err1)
-// 	}
-// 	user.Name = name
-// 	user.RealName = realname
-// 	user.Password = password
-// 	_, err := o.Update(&user)
+func UserUdate(id int, realname, name string) {
+	user := WsUsers{Id: id}
+	o := orm.NewOrm()
+	err1 := o.Read(&user)
+	if err1 != nil {
+		beego.Info("用户更新错误", err1)
+	}
+	user.Name = name
+	user.RealName = realname
+	_, err := o.Update(&user)
 
-// 	if err != nil {
-// 		beego.Info("用户更新错误", err)
-// 	}
+	if err != nil {
+		beego.Info("用户更新错误", err)
+	}
 
-// }
+}
+
+//token 修改
+func TokenUdate(id int, name string) {
+	token := WsOtp{Id: id}
+	o := orm.NewOrm()
+	err1 := o.Read(&token)
+	if err1 != nil {
+		beego.Info("用户更新查询错误", err1)
+	}
+	token.BindingUser = name
+	_, err := o.Update(&token)
+
+	if err != nil {
+		beego.Info("token更新错误", err)
+	}
+
+}
