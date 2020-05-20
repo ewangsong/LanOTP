@@ -1,6 +1,7 @@
 package main
 
 import (
+	"ewangsong/LanOTP/cmd"
 	_ "ewangsong/LanOTP/models"
 	_ "ewangsong/LanOTP/routers"
 
@@ -42,8 +43,8 @@ func init() {
 }
 
 func main() {
-	beego.Run()
+	go beego.Run()
 	//初始化command命令
-	//cmd.Cmd()
+	cmd.Cmd()
 
 }
