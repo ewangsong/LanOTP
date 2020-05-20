@@ -11,9 +11,10 @@ func BasRead() []WsBas {
 	var BasShow []WsBas
 	bas := WsBas{}
 	o := orm.NewOrm()
-	qs := o.QueryTable(bas)
-	if count, err := qs.All(&BasShow); err == nil {
-		beego.Info(count, BasShow)
+	qs :=
+		o.QueryTable(bas)
+	if _, err := qs.All(&BasShow); err == nil {
+
 	} else {
 		beego.Info("查询失败")
 	}
@@ -122,3 +123,14 @@ func TokenRead(id int) WsOtp {
 }
 
 //编辑页面token
+//由用户username获得用户ID
+func UserIdRead(name string) (id int) {
+	user := WsUsers{Name: name}
+	o := orm.NewOrm()
+	err := o.Read(&user, "Name")
+	if err != nil {
+		beego.Error(err)
+		return
+	}
+	return user.Id
+}

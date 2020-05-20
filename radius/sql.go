@@ -3,7 +3,6 @@ package radius
 import (
 	"database/sql"
 	"ewangsong/LanOTP/otp"
-	"fmt"
 
 	"github.com/astaxie/beego"
 
@@ -14,7 +13,6 @@ var dbtype, dbinfo = GetDbConfig()
 
 //判断是否正确连接数据库
 func DbLive() {
-	fmt.Println(dbtype, dbinfo)
 	db, err := sql.Open(dbtype, dbinfo)
 	defer db.Close()
 	if err != nil {
@@ -31,7 +29,6 @@ func DbLive() {
 func GetSecretAndDiff(ipp string) (secret []byte) {
 	db, _ := sql.Open(dbtype, dbinfo)
 	defer db.Close()
-	fmt.Println(ipp)
 	res := db.QueryRow("select ip_addr,secret from ws_bas where ip_addr = ?", ipp)
 	err2 := res.Scan(&ipp, &secret)
 	if err2 != nil {
@@ -66,7 +63,7 @@ func GetUserPasswd(u string) (p string) {
 func GetUserToken(user string) (p string) {
 	db, err := sql.Open(dbtype, dbinfo)
 	if err != nil {
-		panic("打开数据库错误err：")
+		beego.Error("打开数据库错误err：")
 	}
 	defer db.Close()
 	var totp otp.TOTP

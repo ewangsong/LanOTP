@@ -43,11 +43,14 @@ function do_delete(id)
                         <td>{{.token.Secret}}</td>   
                         <td>创建和修改时间</td>
                         <td>{{.token.OperatTime.Format "2006-01-02 15:04:05"}}</td>   
-                    </tr>                                                                   
+                    </tr>  
+                    <tr>
+                        <td> 当前口令</td>  
+                        <td>{{.word}}</td>
+                    </tr>                                                               
             </tbody>
         </table>
-       
-            <div id="qrcode" style="width:300px; height:300px; margin-top:15px;font-size:20px;">二维码:</div>
+        <div id="qrcode" style="width:300px; height:300px; margin-top:15px;font-size:20px;">二维码:</div>
     </div>
 </div>
 </div>

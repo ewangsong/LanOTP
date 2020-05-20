@@ -36,7 +36,7 @@ func Cmd() {
 		stopp()
 	}
 	if v {
-		fmt.Println("当前版本是0.1")
+		fmt.Println("当前版本是0.2.0")
 	}
 
 	if d {
