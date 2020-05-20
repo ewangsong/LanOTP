@@ -3,7 +3,6 @@ package controllers
 import (
 	"encoding/json"
 	"ewangsong/LanOTP/models"
-	"fmt"
 	"strconv"
 
 	"github.com/astaxie/beego"
@@ -80,7 +79,6 @@ func (c *TokenController) PostShowToken() {
 	po.Conditions = conditions    // 传递分页条件 默认全表
 	po.Currentpage = int(pno)     //传递当前页数,默认为1
 	po.PageSize = 10              //页面大小  默认为20
-	fmt.Println(conditions)
 	//返回分页信息,
 	//第一个:为返回的当前页面数据集合,ResultSet类型
 	//第二个:生成的分页链接
@@ -99,13 +97,16 @@ func (c *TokenController) DetailToken() {
 	c.TplName = "token_detail.html"
 
 	id, err := c.GetInt("token_id")
-
 	if err != nil {
 		beego.Info("获取用户ID错误", err)
 		return
 	}
-	c.Data["token"] = models.TokenRead(id)
 
+	token := models.TokenRead(id)
+	tokenqc := "otpauth://totp/" + token.OtpSn + "?secret=" + token.Secret + "&period=30&digits=6&issuer=" + token.BindingUser
+
+	c.Data["token"] = token
+	c.Data["tokenqc"] = tokenqc
 }
 
 //更改token
@@ -131,7 +132,7 @@ func (c *TokenController) PostUpdateToken() {
 	}
 	name := c.GetString("name")
 	models.TokenUdate(id, name)
-	url := c.Ctx.Input.URI()
+	url := "/admin/token/detail?token_id=" + strconv.Itoa(id)
 	c.Redirect(url, 302)
 }
 

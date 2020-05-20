@@ -58,6 +58,6 @@ func init() {
 	dbinfo := beego.AppConfig.String("dbinfo")
 	orm.RegisterDataBase("default", dbtype, dbinfo)
 	orm.RegisterModel(new(WsOtp), new(WsUsers), new(WsAdmin), new(WsBas), new(WsLog))
-	orm.RunSyncdb("default", false, true)
+	orm.RunSyncdb("default", false, false)
 	AddAdmin() //添加默认管理员账号
 }

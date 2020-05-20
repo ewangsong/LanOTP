@@ -3,7 +3,6 @@ package models
 import (
 	// "fmt"
 
-	"fmt"
 	html "html/template"
 	con "strconv"
 	"strings"
@@ -43,8 +42,7 @@ func GetPagesInfo(tableName string, currentpage int, pagesize int, conditions st
 	}
 	var rs orm.RawSeter
 	o := orm.NewOrm()
-	var totalItem, totalpages int = 0, 0 //总条数,总页数
-	fmt.Println("SELECT count(*) FROM " + tableName + " where 1>0 " + conditions)
+	var totalItem, totalpages int = 0, 0                                                         //总条数,总页数
 	o.Raw("SELECT count(*) FROM " + tableName + " where 1>0 " + conditions).QueryRow(&totalItem) //获取总条数
 	if totalItem <= pagesize {
 		totalpages = 1
@@ -56,7 +54,6 @@ func GetPagesInfo(tableName string, currentpage int, pagesize int, conditions st
 		totalpages = temp
 	}
 	rs = o.Raw("SELECT *  FROM " + tableName + "  where id >0 " + conditions + " LIMIT " + con.Itoa((currentpage-1)*pagesize) + "," + con.Itoa(pagesize))
-	fmt.Println(totalItem, totalpages, rs)
 	return totalItem, totalpages, rs
 }
 
