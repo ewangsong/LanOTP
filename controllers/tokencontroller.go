@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"encoding/json"
 	"ewangsong/LanOTP/models"
+	"ewangsong/LanOTP/otp"
 	"strconv"
 
 	"github.com/astaxie/beego"
@@ -93,6 +93,7 @@ func (c *TokenController) PostShowToken() {
 
 //编辑用户
 func (c *TokenController) DetailToken() {
+	var otp otp.TOTP
 	c.Layout = "layout_base.html"
 	c.TplName = "token_detail.html"
 
@@ -103,10 +104,14 @@ func (c *TokenController) DetailToken() {
 	}
 
 	token := models.TokenRead(id)
-	tokenqc := "otpauth://totp/" + token.OtpSn + "?secret=" + token.Secret + "&period=30&digits=6&issuer=" + token.BindingUser
+	otp.Secret = token.Secret
+	word := otp.TotpGet()
+	tokenqc := "otpauth://totp/" + token.OtpSn + "?secret=" + token.Secret + `&period=30&digits=6&issuer=` + token.BindingUser
 
 	c.Data["token"] = token
+	c.Data["word"] = word
 	c.Data["tokenqc"] = tokenqc
+
 }
 
 //更改token
@@ -185,12 +190,6 @@ func (c *TokenController) PostAddToken() {
 		ret.Msg = "账号已存在或者输入错误"
 	}
 
-	b, err := json.Marshal(ret)
-	if err == nil {
-		c.Ctx.WriteString(string(b))
-	} else {
-		c.Ctx.WriteString("{code:1,msg:\"JSON ERROR\"}")
-
-	}
-
+	c.Data["json"] = ret
+	c.ServeJSON()
 }

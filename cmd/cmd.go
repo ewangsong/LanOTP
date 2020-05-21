@@ -10,23 +10,23 @@ import (
 )
 
 var (
-	start bool
-	stop  bool
-	v     bool
-	h     bool
-	d     bool
+	start  bool
+	stop   bool
+	v      bool
+	h      bool
+	startd bool
 )
 
 //Cmd 命令行
 func Cmd() {
-	flag.BoolVar(&start, "start", false, "启动")
+	flag.BoolVar(&start, "start", false, "前台启动")
 	flag.BoolVar(&stop, "stop", false, "关闭程序")
 	flag.BoolVar(&v, "v", false, "查看版本")
-	flag.BoolVar(&d, "d", false, "后台启动")
+	flag.BoolVar(&startd, "startd", false, "后台启动")
 
 	flag.Parse()
-
 	command := exec.Command("./lanotp", "-start")
+
 	if start {
 		radius.RadiusRun()
 	}
@@ -39,11 +39,11 @@ func Cmd() {
 		fmt.Println("当前版本是0.2.0")
 	}
 
-	if d {
+	if startd {
 		fmt.Println("后台启动")
 		err := command.Start()
 		fmt.Printf("gonne start, [PID] %d running...\n", command.Process.Pid)
-		ioutil.WriteFile("./gonne.lock", []byte(fmt.Sprintf("%d", command.Process.Pid)), 0666)
+		ioutil.WriteFile("/run/lanotp.pid", []byte(fmt.Sprintf("%d", command.Process.Pid)), 0666)
 		if err != nil {
 			fmt.Println("启动程序失败", err)
 			return
@@ -57,6 +57,7 @@ func Cmd() {
 	if len(os.Args) == 1 {
 		flag.PrintDefaults()
 	}
+
 }
 
 func stopp() {

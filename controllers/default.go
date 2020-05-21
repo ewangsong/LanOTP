@@ -147,26 +147,22 @@ func (c *MainController) PostLog() { //post请求
 	c.TplName = "log.html"
 }
 
-//系统服务页
-
-func (c *MainController) ShowSuperrpc() {
-	c.Layout = "layout_base.html"
-	c.TplName = "wait.html"
-}
-
 //控制面板
 func (c *MainController) ShowDashboard() {
 	c.Layout = "layout_base.html"
 	if c.LayoutSections == nil {
 		c.LayoutSections = make(map[string]string)
 	}
+	c.TplName = "dashboard.html"
+
 	c.Data["Ip"] = c.Ctx.Input.IP()
 	c.Data["CPU"] = c.GetCpu()
 	c.Data["ServerTime"] = c.GetServerTime()
 	c.Data["MemInfo"] = c.GetMemInfo()
-	c.Data["Disk"] = c.GetDiskUsage()
+	c.Data["all"] = c.GetDiskUsage().GetGB("All")
+	c.Data["used"] = c.GetDiskUsage().GetGB("Used")
+	c.Data["free"] = c.GetDiskUsage().GetGB("Free")
 
-	c.TplName = "dashboard.html"
 }
 
 //服务器时间

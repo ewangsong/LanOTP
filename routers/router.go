@@ -20,7 +20,6 @@ func init() {
 	beego.Router("/admin/bas/delete", &controllers.BasController{}, "get:DeleteBas")
 
 	//	beego.Router("/admin/config", &controllers.MainController{}, "get:ShowConfig")
-	beego.Router("/admin/superrpc", &controllers.MainController{}, "get:ShowSuperrpc")
 	beego.Router("/admin/dashboard", &controllers.MainController{}, "get:ShowDashboard")
 	beego.Router("/admin/password", &controllers.MainController{}, "get:ShowChangePassword;post:PostChangePassword")
 	beego.Router("/admin/logout", &controllers.MainController{}, "get:LogOut")

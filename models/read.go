@@ -123,14 +123,3 @@ func TokenRead(id int) WsOtp {
 }
 
 //编辑页面token
-//由用户username获得用户ID
-func UserIdRead(name string) (id int) {
-	user := WsUsers{Name: name}
-	o := orm.NewOrm()
-	err := o.Read(&user, "Name")
-	if err != nil {
-		beego.Error(err)
-		return
-	}
-	return user.Id
-}
