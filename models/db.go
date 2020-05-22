@@ -3,9 +3,9 @@ package models
 import (
 	"time"
 
-	_ "github.com/Go-SQL-Driver/MySQL"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
+	_ "github.com/go-sql-driver/mysql"
 )
 
 //管理用户
