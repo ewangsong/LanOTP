@@ -18,56 +18,60 @@ func AdminUpdate(a, b string) string {
 		admin.Password = a
 		_, err := o.Update(&admin)
 		if err != nil {
-			return "on"
+			return "no"
 		}
 		return "ok"
 	} else {
-		return "on"
+		return "no"
 	}
 
 }
 
 //bas修改
-func BasUpdate(id int, name, ip_add, secret, port string) {
-	bas := WsBas{Id: id}
+func BasUpdate(id int, name, ip_add, secret, port string) (oldbas, newbas WsBas) {
+	oldbas = WsBas{Id: id}
 	o := orm.NewOrm()
-	err1 := o.Read(&bas)
+	err1 := o.Read(&oldbas)
 	if err1 != nil {
 		beego.Info("bas更新错误", err1)
 	}
-	bas.Name = name
-	bas.IpAddr = ip_add
-	bas.Secret = secret
-	bas.Port = port
+	newbas = oldbas
+	newbas.Name = name
+	newbas.IpAddr = ip_add
+	newbas.Secret = secret
+	newbas.Port = port
 
-	_, err := o.Update(&bas)
+	_, err := o.Update(&newbas)
 
 	if err != nil {
 		beego.Info("bas更新错误", err)
 	}
 
+	return oldbas, newbas
+
 }
 
 //用户修改
-func UserUdate(id int, realname, name string) {
-	user := WsUsers{Id: id}
+func UserUdate(id int, realname, name string) (olduser, newuser WsUsers) {
+	olduser = WsUsers{Id: id}
 	o := orm.NewOrm()
-	err1 := o.Read(&user)
+	err1 := o.Read(&olduser)
+	newuser = olduser
 	if err1 != nil {
 		beego.Info("用户更新错误", err1)
 	}
-	user.Name = name
-	user.RealName = realname
-	_, err := o.Update(&user)
+	newuser.Name = name
+	newuser.RealName = realname
+	_, err := o.Update(&newuser)
 
 	if err != nil {
 		beego.Info("用户更新错误", err)
 	}
-
+	return olduser, newuser
 }
 
 //token 修改
-func TokenUdate(id int, name string) {
+func TokenUdate(id int, name string) WsOtp {
 	token := WsOtp{Id: id}
 	o := orm.NewOrm()
 	err1 := o.Read(&token)
@@ -80,5 +84,5 @@ func TokenUdate(id int, name string) {
 	if err != nil {
 		beego.Info("token更新错误", err)
 	}
-
+	return token
 }

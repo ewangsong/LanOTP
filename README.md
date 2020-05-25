@@ -1,9 +1,9 @@
 ## 关于
-- 懒投资RADIUS是一个开源的Radius服务软件。
+- LANOTP是一个开源的Radius OTP服务软件。
 
-- 懒投资RADIUS支持标准RADIUS协议。
+- LANOTP支持标准RADIUS协议。
 
-- 编写参考：ToughRADIUS、SoftRadius。
+- 编写参考：ToughRADIUS、SoftRadius、GO-OTP
 
 ## 安装（目前仅支持Linux）
 
@@ -12,30 +12,29 @@
  编译需要go环境需自己安装下载
 
 - go get github.com/astaxie/beego
-- go get github.com/spf13/cobra
 - go get -u github.com/go-sql-driver/mysql   
 
     ```
     在go源目录下创建文件夹用来git clone 源代码
-    mkdir radius
-    cd radius
-    git clone https://github.com/ewangsong/LanRadius.git
-    cd Lanradius
-    go build -o lanradius main.go
-    cp -r LanRadius /opt/lanradius
+    mkdir lanotp
+    cd lanotp
+    git clone https://github.com/ewangsong/LanOTP.git
+    cd LanOTP
+    go build -o lanotp main.go
+    cp -r LanOTP /opt/lanotp
     ```
 ### 快捷安装
 - 安装数据库并创建lanradius数据库
 
     ```
-    create database lanradius;
+    create database lanotp default character set utf8;
     ```
 - git中默认包含Linux的二进制文件
     ```
     cd /opt
-    git clone https://github.com/ewangsong/LanRadius.git
-    mv LanRadius lanradius
-    cd /opt/lanradius
+    git clone https://github.com/ewangsong/LanOTP.git
+    mv LanOTP lanotp
+    cd /opt/lanotp
     ```
 - 编写system启动脚本
   
@@ -125,6 +124,6 @@ radiusport=":1812"               //radius服务端口
 /var/log/lanraiuds下
 ```
 ### 待做
-- QA
-- OTP二次认证
-- 全平台
+1.	令牌列表用户链接问题
+2.	自动提交信息
+3.	模糊查询

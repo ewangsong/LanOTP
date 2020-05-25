@@ -23,10 +23,10 @@ var FilterUser = func(ctx *context.Context) {
 }
 
 func init() {
-	beego.AppPath = "/opt/lanotp"
-	beego.SetStaticPath("/static", "/opt/lanotp/static")
+	// beego.AppPath = "/opt/lanotp"
+	// beego.SetStaticPath("/static", "/opt/lanotp/static")
 
-	beego.LoadAppConfig("ini", "conf/app.conf")
+	// beego.LoadAppConfig("ini", "conf/app.conf")
 
 	jsonConfig := `{
 	    "filename" : "/var/log/lanradius/lanradius.log"
@@ -37,7 +37,7 @@ func init() {
 
 	logs.SetLogger(logs.AdapterFile, jsonConfig) // 设置日志记录方式：本地文件记录
 	logs.EnableFuncCallDepth(true)               // 输出log时能显示输出文件名和行号（非必须）
-	beego.BeeLogger.DelLogger("console")         //删除console日志输出
+	//beego.BeeLogger.DelLogger("console")         //删除console日志输出
 	//注册过滤器
 	beego.InsertFilter("/*", beego.BeforeRouter, FilterUser)
 	//打开session
@@ -46,8 +46,8 @@ func init() {
 }
 
 func main() {
+	//启动webUI
 	go beego.Run()
 	//初始化command命令
 	cmd.Cmd()
-
 }

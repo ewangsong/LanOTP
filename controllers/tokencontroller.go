@@ -91,7 +91,7 @@ func (c *TokenController) PostShowToken() {
 	c.Data["totalItem"] = totalItem
 }
 
-//编辑用户
+//编辑token
 func (c *TokenController) DetailToken() {
 	var otp otp.TOTP
 	c.Layout = "layout_base.html"
@@ -136,7 +136,9 @@ func (c *TokenController) PostUpdateToken() {
 		return
 	}
 	name := c.GetString("name")
-	models.TokenUdate(id, name)
+	token := models.TokenUdate(id, name)
+	logdesc := "更改令牌" + token.OtpSn + " 用户为" + name
+	models.LogInsert("admin", c.Ctx.Input.IP(), logdesc)
 	url := "/admin/token/detail?token_id=" + strconv.Itoa(id)
 	c.Redirect(url, 302)
 }
@@ -150,7 +152,9 @@ func (c *TokenController) DeleteToken() {
 		beego.Info("获取用户ID错误", err)
 		return
 	}
-	models.TokenDelete(id)
+	token := models.TokenDelete(id)
+	logdesc := "删除令牌" + token.OtpSn
+	models.LogInsert("admin", c.Ctx.Input.IP(), logdesc)
 	c.Redirect("/admin/token", 302)
 }
 
@@ -180,16 +184,18 @@ func (c *TokenController) PostAddToken() {
 	username := c.GetString("username")
 	tid, _ := strconv.Atoi(typeid)
 
-	tokenid, bo := models.AddToken(username, tid)
+	token, bo := models.AddToken(username, tid)
 	if bo {
 		ret.Code = 0
 		ret.Msg = "ok"
-		ret.Url = "/admin/token/detail?token_id=" + strconv.Itoa(tokenid) //跳转到指定token绑定用户界面
+		ret.Url = "/admin/token/detail?token_id=" + strconv.Itoa(token.Id) //跳转到指定token绑定用户界面
 	} else {
 		ret.Code = 1
 		ret.Msg = "账号已存在或者输入错误"
 	}
 
+	logdesc := "新增令牌" + token.OtpSn + " 用户为" + token.BindingUser
+	models.LogInsert("admin", c.Ctx.Input.IP(), logdesc)
 	c.Data["json"] = ret
 	c.ServeJSON()
 }

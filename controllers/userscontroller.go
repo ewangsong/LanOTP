@@ -3,6 +3,7 @@ package controllers
 import (
 	"encoding/json"
 	"ewangsong/LanOTP/models"
+	"fmt"
 
 	"github.com/astaxie/beego"
 )
@@ -127,7 +128,10 @@ func (c *UserController) PostUpdateUsers() {
 	}
 	name := c.GetString("name")
 	realname := c.GetString("realname")
-	models.UserUdate(id, realname, name)
+	olduser, newuser := models.UserUdate(id, realname, name)
+
+	logdesc := "用户" + olduser.RealName + " " + olduser.Name + "更改为" + newuser.RealName + " " + newuser.Name
+	models.LogInsert("admin", c.Ctx.Input.IP(), logdesc)
 	url := c.Ctx.Input.URI()
 	c.Redirect(url, 302)
 }
@@ -141,7 +145,9 @@ func (c *UserController) DeleteUser() {
 		beego.Info("获取用户ID错误", err)
 		return
 	}
-	models.UserDelete(id)
+	user := models.UserDelete(id)
+	logdesc := "删除用户" + user.Name + " " + user.RealName
+	models.LogInsert("admin", c.Ctx.Input.IP(), logdesc)
 	c.Redirect("/admin/users", 302)
 }
 
@@ -169,15 +175,17 @@ func (c *UserController) PostAddUser() {
 	realname := c.GetString("realname")
 	name := c.GetString("username")
 
-	if models.UserInsert(realname, name) {
+	user, err := models.UserInsert(realname, name)
+	if err != nil {
+		ret.Code = 1
+		ret.Msg = fmt.Sprint(err)
+	} else {
+		logdesc := "添加用户" + user.Name + " " + user.RealName
+		models.LogInsert("admin", c.Ctx.Input.IP(), logdesc)
 		url := models.UsersRead5(name)
 		ret.Code = 0
 		ret.Msg = "ok"
 		ret.Url = url
-
-	} else {
-		ret.Code = 1
-		ret.Msg = "账号已存在或者输入错误"
 	}
 
 	b, err := json.Marshal(ret)

@@ -5,37 +5,37 @@ import (
 	"github.com/astaxie/beego/orm"
 )
 
-func BsaDelete(id int) {
+func BsaDelete(id int) WsBas {
 	o := orm.NewOrm()
 	bas := WsBas{Id: id}
-
+	o.Read(&bas)
 	_, err := o.Delete(&bas)
 	if err != nil {
 		beego.Info("删除bas错误", err)
-		return
 	}
+	return bas
 }
 
 //UserDelete 删除用户
-func UserDelete(id int) {
+func UserDelete(id int) WsUsers {
 	o := orm.NewOrm()
 	user := WsUsers{Id: id}
 
 	_, err := o.Delete(&user)
 	if err != nil {
 		beego.Info("删除用户错误", err)
-		return
 	}
+	return user
 }
 
 //TokenDelete 删除token
-func TokenDelete(id int) {
+func TokenDelete(id int) WsOtp {
 	o := orm.NewOrm()
 	token := WsOtp{Id: id}
-
+	o.Read(&token)
 	_, err := o.Delete(&token)
 	if err != nil {
 		beego.Info("删除token错误", err)
-		return
 	}
+	return token
 }
