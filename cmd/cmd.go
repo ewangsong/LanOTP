@@ -36,7 +36,7 @@ func Cmd() {
 		stopp()
 	}
 	if v {
-		fmt.Println("当前版本是0.2.0")
+		fmt.Println("当前版本是0.5.0")
 	}
 
 	if startd {
@@ -61,7 +61,7 @@ func Cmd() {
 }
 
 func stopp() {
-	b, err := ioutil.ReadFile("./gonne.lock")
+	b, err := ioutil.ReadFile("/run/lanotp.pid")
 
 	if err != nil {
 		fmt.Println("获取程序PID错误", err)

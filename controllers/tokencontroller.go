@@ -153,7 +153,7 @@ func (c *TokenController) DeleteToken() {
 		return
 	}
 	token := models.TokenDelete(id)
-	logdesc := "删除令牌" + token.OtpSn
+	logdesc := "删除令牌" + token.OtpSn + "用户为" + token.BindingUser
 	models.LogInsert("admin", c.Ctx.Input.IP(), logdesc)
 	c.Redirect("/admin/token", 302)
 }
